@@ -6,23 +6,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Robert Šípek - PHP Developer | portfolio 2022</title>
+  <title>Mokaddes Hosain - Software Developer | portfolio 2022</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-  <meta name="description" content="Robert Šípek - PHP Developer | portfolio 2022">
-  <meta name="author" content="Robert Šípek">
+  <meta name="description" content="Mokaddes Hosain - Software Developer | portfolio " . {{date('Y')}}>
+  <meta name="author" content="Mokaddes Hosain">
 
   {{-- <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> --}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 
-  <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
-  <link href="/assets/css/agency.css" rel="stylesheet">
-  <link href="/assets/css/main.css" rel="stylesheet">
+  <link href="{{ asset('assets/css/agency.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2010060-39"></script>
   <script>
@@ -30,7 +30,7 @@
 
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-2010060-39');
+    gtag('config', '');
   </script>
 
 
@@ -73,10 +73,10 @@
 <header class="masthead">
   <div class="container">
     <div class="intro-text">
-      <p class="intro-lead-in">Robert Šípek</p>
+      <p class="intro-lead-in">Mokaddes Hosain</p>
       <h1 class="intro-heading text-uppercase"><strong>PHP Developer</strong></h1>
       <p>portfolio</p>
-      <p class="text-muted">1.0.0-beta</p>
+      {{-- <p class="text-muted">1.0.0-beta</p> --}}
     </div>
     <div class="py-3">
       <a class="btn btn-lg btn-outline-secondary js-scroll-trigger" href="#professional">
@@ -101,7 +101,7 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                  <img src="/assets/icons/php.svg" alt="PHP">
+                  <img src="{{ asset('assets/icons/php.svg') }}" alt="PHP">
               </div>
               <h3 class="service-heading">PHP</h3>
               <p class="text-muted">I use PHP&nbsp;7 language to develop web applications</p>
@@ -110,7 +110,7 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                  <img src="/assets/icons/html.svg" alt="HTML">
+                  <img src="{{ asset('assets/icons/html.svg') }}" alt="HTML">
               </div>
               <h3 class="service-heading">HTML</h3>
               <p class="text-muted">I use HTML 5 markup language to show data in the browser</p>
@@ -119,7 +119,7 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                  <img src="/assets/icons/css.svg" alt="CSS">
+                  <img src="{{ asset('assets/icons/css.svg') }}" alt="CSS">
               </div>
               <h3 class="service-heading">CSS</h3>
               <p class="text-muted">I use CSS to make look and feel better</p>
@@ -128,7 +128,7 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                  <img src="/assets/icons/javascript.svg" alt="JavaScript">
+                  <img src="{{ asset('assets/icons/javascript.svg') }}" alt="JavaScript">
               </div>
               <h3 class="service-heading">JavaScript</h3>
               <p class="text-muted">I use JavaScript to make user experience better</p>
@@ -137,7 +137,7 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                  <img src="/assets/icons/database.svg" alt="Database">
+                  <img src="{{ asset('assets/icons/database.svg') }}" alt="Database">
               </div>
               <h3 class="service-heading">Database</h3>
               <p class="text-muted">I use relational databases MySQL and MariaDB to store data</p>
@@ -146,7 +146,7 @@
           <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                  <img src="/assets/icons/apache.svg" alt="Apache Server">
+                  <img src="{{ asset('assets/icons/apache.svg') }}" alt="Apache Server">
               </div>
               <h3 class="service-heading">Apache Server</h3>
               <p class="text-muted">I use Apache server to serve sites</p>
@@ -170,56 +170,56 @@
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="https://www.knihovny.cz" title="knihovny.cz" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/knihovny.cz.svg" alt="knihovny.cz">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/knihovny.cz.svg') }}" alt="knihovny.cz">
               </a>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="https://www.inpage.cz/" title="inPage" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/inpage.svg" alt="inPage">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/inpage.svg') }}" alt="inPage">
               </a>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="https://www.zoner.eu/" title="ZONER software" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/zoner.svg" alt="ZONER software">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/zoner.svg') }}" alt="ZONER software">
               </a>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="https://www.zoner.cz/" title="Zoner Photo Studio" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/zps.svg" alt="Zoner Photo Studio">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/zps.svg') }}" alt="Zoner Photo Studio">
               </a>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="https://www.sslmarket.cz/" title="SSL market" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/sslmarket.svg" alt="SSL market">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/sslmarket.svg') }}" alt="SSL market">
               </a>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="https://www.czechia.com/" title="Czechia" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/czechia.svg" alt="Czechia">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/czechia.svg') }}" alt="Czechia">
               </a>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="http://gransy.cz/" title="Gransy" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/gransy.svg" alt="Gransy">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/gransy.svg') }}" alt="Gransy">
               </a>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <a href="http://www.langreal.cz/" title="langreal.cz" target="_blank" rel="nofollow">
-                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/langreal.svg" alt="langreal.cz">
+                <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/langreal.svg') }}" alt="langreal.cz">
               </a>
             </div>
           </div>
@@ -248,7 +248,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/nette.svg" alt="Nette">
+              <img src="{{ asset('assets/icons/nette.svg') }}" alt="Nette">
             </div>
             <h4>Nette</h4>
             <p class="text-muted">PHP framework Nette</p>
@@ -257,7 +257,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/symfony.svg" alt="Symfony">
+              <img src="{{ asset('assets/icons/symfony.svg') }}" alt="Symfony">
             </div>
             <h4>Symfony</h4>
             <p class="text-muted">PHP framework Symfony</p>
@@ -266,7 +266,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/laravel.svg" alt="Laravel">
+              <img src="{{ asset('assets/icons/laravel.svg') }}" alt="Laravel">
             </div>
             <h4>Laravel</h4>
             <p class="text-muted">PHP framework Laravel</p>
@@ -275,7 +275,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/zendframework.svg" alt="Zend Framework">
+              <img src="{{ asset('assets/icons/zendframework.svg') }}" alt="Zend Framework">
             </div>
             <h4>Zend Framework</h4>
             <p class="text-muted">PHP framework Zend Framework</p>
@@ -284,7 +284,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/orm.svg" alt="ORM">
+              <img src="{{ asset('assets/icons/orm.svg') }}" alt="ORM">
             </div>
             <h4>ORM</h4>
             <p class="text-muted">Doctrine&nbsp;ORM, Eloquent&nbsp;ORM</p>
@@ -293,7 +293,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/bootstrap.svg" alt="Bootstrap">
+              <img src="{{ asset('assets/icons/bootstrap.svg') }}" alt="Bootstrap">
             </div>
             <h4>Bootstrap</h4>
             <p class="text-muted">HTML, CSS, and JS library</p>
@@ -317,7 +317,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/phpstorm.svg" alt="PhpStorm IDE">
+              <img src="{{ asset('assets/icons/phpstorm.svg') }}" alt="PhpStorm IDE">
             </div>
             <h4>PhpStorm IDE</h4>
             <p class="text-muted">Development Environment</p>
@@ -326,7 +326,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/terminal.svg" alt="Terminal">
+              <img src="{{ asset('assets/icons/terminal.svg') }}" alt="Terminal">
             </div>
             <h4>Terminal</h4>
             <p class="text-muted">Command line</p>
@@ -335,7 +335,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/chrome.svg" alt="Chrome">
+              <img src="{{ asset('assets/icons/chrome.svg') }}" alt="Chrome">
             </div>
             <h4>Chrome</h4>
             <p class="text-muted">Google Chrome Web Browser</p>
@@ -344,7 +344,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/git.svg" alt="Git">
+              <img src="{{ asset('assets/icons/git.svg') }}" alt="Git">
             </div>
             <h4>Git</h4>
             <p class="text-muted">Version control system </p>
@@ -353,7 +353,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/composer.svg" alt="Composer">
+              <img src="{{ asset('assets/icons/composer.svg') }}" alt="Composer">
             </div>
             <h4>Composer</h4>
             <p class="text-muted">Dependency Manager for PHP</p>
@@ -362,7 +362,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/phpunit.svg" alt="PHP Unit">
+              <img src="{{ asset('assets/icons/phpunit.svg') }}" alt="PHP Unit">
             </div>
             <h4>PHP Unit</h4>
             <p class="text-muted">Unit tests</p>
@@ -371,7 +371,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/phpstan.svg" alt="PHPStan">
+              <img src="{{ asset('assets/icons/phpstan.svg') }}" alt="PHPStan">
             </div>
             <h4>PHPStan</h4>
             <p class="text-muted">PHP Static Analysis Tool</p>
@@ -380,7 +380,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/rabbitmq.svg" alt="RabbitMQ">
+              <img src="{{ asset('assets/icons/rabbitmq.svg') }}" alt="RabbitMQ">
             </div>
             <h4>RabbitMQ</h4>
             <p class="text-muted">Message Queuing</p>
@@ -389,7 +389,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/aws.svg" alt="AWS">
+              <img src="{{ asset('assets/icons/aws.svg') }}" alt="AWS">
             </div>
             <h4>AWS</h4>
             <p class="text-muted">Amazon Web Services</p>
@@ -398,7 +398,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/oop.svg" alt="OOP">
+              <img src="{{ asset('assets/icons/oop.svg') }}" alt="OOP">
             </div>
             <h4>OOP</h4>
             <p class="text-muted">Think in objects</p>
@@ -407,7 +407,7 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="/assets/icons/dry.svg" alt="DRY">
+              <img src="{{ asset('assets/icons/dry.svg') }}" alt="DRY">
             </div>
             <h4>DRY</h4>
             <p class="text-muted">Don't repeat yourself</p>
@@ -431,7 +431,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/sql.svg" alt="SQL">
+                <img src="{{ asset('assets/icons/sql.svg') }}" alt="SQL">
             </div>
             <p>SQL</p>
           </div>
@@ -439,7 +439,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/adminer.svg" alt="Adminer">
+                <img src="{{ asset('assets/icons/adminer.svg') }}" alt="Adminer">
             </div>
             <p>Adminer</p>
           </div>
@@ -447,7 +447,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/algolia.svg" alt="Algolia">
+                <img src="{{ asset('assets/icons/algolia.svg') }}" alt="Algolia">
             </div>
             <p>Algolia</p>
           </div>
@@ -455,7 +455,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/angular.svg" alt="Angular">
+                <img src="{{ asset('assets/icons/angular.svg') }}" alt="Angular">
             </div>
             <p>Angular</p>
           </div>
@@ -463,7 +463,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/bitmaps-graphics.svg" alt="Bitmaps graphics">
+                <img src="{{ asset('assets/icons/bitmaps-graphics.svg') }}" alt="Bitmaps graphics">
             </div>
             <p>Bitmaps graphics</p>
           </div>
@@ -471,7 +471,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/crud.svg" alt="CRUD">
+                <img src="{{ asset('assets/icons/crud.svg') }}" alt="CRUD">
             </div>
             <p>CRUD</p>
           </div>
@@ -479,7 +479,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/css3.svg" alt="CSS 3">
+                <img src="{{ asset('assets/icons/css3.svg') }}" alt="CSS 3">
             </div>
             <p>CSS 3</p>
           </div>
@@ -487,7 +487,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/design-patterns.svg" alt="Design patterns">
+                <img src="{{ asset('assets/icons/design-patterns.svg') }}" alt="Design patterns">
             </div>
             <p>Design patterns</p>
           </div>
@@ -495,7 +495,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/digital-ocean.svg" alt="Digital Ocean">
+                <img src="{{ asset('assets/icons/digital-ocean.svg') }}" alt="Digital Ocean">
             </div>
             <p>Digital Ocean</p>
           </div>
@@ -503,7 +503,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/docker.svg" alt="Docker">
+                <img src="{{ asset('assets/icons/docker.svg') }}" alt="Docker">
             </div>
             <p>Docker</p>
           </div>
@@ -511,7 +511,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/drupal.svg" alt="Drupal CMS">
+                <img src="{{ asset('assets/icons/drupal.svg') }}" alt="Drupal CMS">
             </div>
             <p>Drupal CMS</p>
           </div>
@@ -519,7 +519,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/elasticsearch.svg" alt="Elastic Search">
+                <img src="{{ asset('assets/icons/elasticsearch.svg') }}" alt="Elastic Search">
             </div>
             <p>Elastic Search</p>
           </div>
@@ -527,7 +527,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/firebase.svg" alt="Firebase">
+                <img src="{{ asset('assets/icons/firebase.svg') }}" alt="Firebase">
             </div>
             <p>Firebase</p>
           </div>
@@ -535,7 +535,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/fontawesome.svg" alt="Font Awesome">
+                <img src="{{ asset('assets/icons/fontawesome.svg') }}" alt="Font Awesome">
             </div>
             <p>Font Awesome</p>
           </div>
@@ -543,7 +543,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/github.svg" alt="Github">
+                <img src="{{ asset('assets/icons/github.svg') }}" alt="Github">
             </div>
             <p>Github</p>
           </div>
@@ -551,7 +551,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/gitkraken.svg" alt="Gitkraken">
+                <img src="{{ asset('assets/icons/gitkraken.svg') }}" alt="Gitkraken">
             </div>
             <p>Gitkraken</p>
           </div>
@@ -559,7 +559,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/gitlab.svg" alt="Gitlab">
+                <img src="{{ asset('assets/icons/gitlab.svg') }}" alt="Gitlab">
             </div>
             <p>Gitlab</p>
           </div>
@@ -567,7 +567,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/html5.svg" alt="HTML 5">
+                <img src="{{ asset('assets/icons/html5.svg') }}" alt="HTML 5">
             </div>
             <p>HTML 5</p>
           </div>
@@ -575,7 +575,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/illustrator.svg" alt="Illustrator">
+                <img src="{{ asset('assets/icons/illustrator.svg') }}" alt="Illustrator">
             </div>
             <p>Illustrator</p>
           </div>
@@ -583,7 +583,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/java.svg" alt="Java">
+                <img src="{{ asset('assets/icons/java.svg') }}" alt="Java">
             </div>
             <p>Java</p>
           </div>
@@ -591,7 +591,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/jenkins.svg" alt="Jenkins">
+                <img src="{{ asset('assets/icons/jenkins.svg') }}" alt="Jenkins">
             </div>
             <p>Jenkins</p>
           </div>
@@ -599,7 +599,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/less.svg" alt="Less">
+                <img src="{{ asset('assets/icons/less.svg') }}" alt="Less">
             </div>
             <p>Less</p>
           </div>
@@ -607,7 +607,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/linux.svg" alt="Linux">
+                <img src="{{ asset('assets/icons/linux.svg') }}" alt="Linux">
             </div>
             <p>Linux</p>
           </div>
@@ -615,7 +615,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/mongodb.svg" alt="MongoDB">
+                <img src="{{ asset('assets/icons/mongodb.svg') }}" alt="MongoDB">
             </div>
             <p>MongoDB</p>
           </div>
@@ -623,7 +623,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/node-js.svg" alt="Node JS">
+                <img src="{{ asset('assets/icons/node-js.svg') }}" alt="Node JS">
             </div>
             <p>Node JS</p>
           </div>
@@ -631,7 +631,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/npm.svg" alt="NPM">
+                <img src="{{ asset('assets/icons/npm.svg') }}" alt="NPM">
             </div>
             <p>NPM</p>
           </div>
@@ -639,7 +639,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/owasp.svg" alt="OWASP">
+                <img src="{{ asset('assets/icons/owasp.svg') }}" alt="OWASP">
             </div>
             <p>OWASP</p>
           </div>
@@ -647,7 +647,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/photoshop.svg" alt="Photoshop">
+                <img src="{{ asset('assets/icons/photoshop.svg') }}" alt="Photoshop">
             </div>
             <p>Photoshop</p>
           </div>
@@ -655,7 +655,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/php-fig.svg" alt="PHP-FIG">
+                <img src="{{ asset('assets/icons/php-fig.svg') }}" alt="PHP-FIG">
             </div>
             <p>PHP-FIG</p>
           </div>
@@ -663,7 +663,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/python.svg" alt="Python">
+                <img src="{{ asset('assets/icons/python.svg') }}" alt="Python">
             </div>
             <p>Python</p>
           </div>
@@ -671,7 +671,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/sass.svg" alt="Sass">
+                <img src="{{ asset('assets/icons/sass.svg') }}" alt="Sass">
             </div>
             <p>Sass</p>
           </div>
@@ -679,7 +679,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/slack.svg" alt="Slack">
+                <img src="{{ asset('assets/icons/slack.svg') }}" alt="Slack">
             </div>
             <p>Slack</p>
           </div>
@@ -687,7 +687,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/typescript.svg" alt="TypeScript">
+                <img src="{{ asset('assets/icons/typescript.svg') }}" alt="TypeScript">
             </div>
             <p>TypeScript</p>
           </div>
@@ -695,7 +695,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/uml.svg" alt="UML">
+                <img src="{{ asset('assets/icons/uml.svg') }}" alt="UML">
             </div>
             <p>UML</p>
           </div>
@@ -703,7 +703,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/vector-graphics.svg" alt="Vector graphics">
+                <img src="{{ asset('assets/icons/vector-graphics.svg') }}" alt="Vector graphics">
             </div>
             <p>Vector graphics</p>
           </div>
@@ -711,7 +711,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/vuejs.svg" alt="Vue.js">
+                <img src="{{ asset('assets/icons/vuejs.svg') }}" alt="Vue.js">
             </div>
             <p>Vue.js</p>
           </div>
@@ -719,7 +719,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/wordpress.svg" alt="Wordpress">
+                <img src="{{ asset('assets/icons/wordpress.svg') }}" alt="Wordpress">
             </div>
             <p>Wordpress</p>
           </div>
@@ -727,7 +727,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/xml.svg" alt="XML">
+                <img src="{{ asset('assets/icons/xml.svg') }}" alt="XML">
             </div>
             <p>XML</p>
           </div>
@@ -735,7 +735,7 @@
         <div class="col-4 col-sm-3 col-md-2 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/xslt.svg" alt="XSLT">
+                <img src="{{ asset('assets/icons/xslt.svg') }}" alt="XSLT">
             </div>
             <p>XSLT</p>
           </div>
@@ -757,7 +757,7 @@
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/globe-americas.svg" alt="English">
+                <img src="{{ asset('assets/icons/globe-americas.svg') }}" alt="English">
               </div>
               <h4>English</h4>
               <p class="text-muted">I can read and write English</p>
@@ -766,7 +766,7 @@
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/stopwatch.svg" alt="Ready">
+                <img src="{{ asset('assets/icons/stopwatch.svg') }}" alt="Ready">
               </div>
               <h4>Ready</h4>
               <p class="text-muted">I'm ready to&nbsp;code</p>
@@ -775,7 +775,7 @@
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/team.svg" alt="Team">
+                <img src="{{ asset('assets/icons/team.svg') }}" alt="Team">
               </div>
               <h4>Team</h4>
               <p class="text-muted">I'm a team player</p>
@@ -784,7 +784,7 @@
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/heart.svg" alt="Enjoy">
+                <img src="{{ asset('assets/icons/heart.svg') }}" alt="Enjoy">
               </div>
               <h4>Enjoy</h4>
               <p class="text-muted">I enjoy software development</p>
@@ -793,7 +793,7 @@
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/tachometer.svg" alt="Engagement">
+                <img src="{{ asset('assets/icons/tachometer.svg') }}" alt="Engagement">
               </div>
               <h4>Engagement</h4>
               <p class="text-muted">I work in full engagement</p>
@@ -802,7 +802,7 @@
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card-body">
               <div class="fa-stack fa-1x mb-3">
-                <img src="/assets/icons/analytical-skills.svg" alt="Analytical">
+                <img src="{{ asset('assets/icons/analytical-skills.svg') }}" alt="Analytical">
               </div>
               <h4>Analytical</h4>
               <p class="text-muted">Analytical skills</p>
@@ -819,25 +819,25 @@
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
           <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/robertsipek/" target="_blank" rel="nofollow" title="My LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/mokaddes/" target="_blank" rel="nofollow" title="My LinkedIn Profile">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://zooom.cz/" target="_blank" rel="nofollow" title="My Blog [cs]">
-              <i class="fab fa-blogger-b"></i>
+            <a href="https://www.facebook.com/mokaddesru/" target="_blank" rel="nofollow" title="My LinkedIn Profile">
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
         </ul>
       </div>
       <div class="col-md-4">
-        <span class="copyright">&copy; 2022 | Robert Šípek</span>
+        <span class="copyright">&copy; 2022 | Mokaddes Hosain</span>
       </div>
     </div>
   </div>
 </footer>
-<script src="/assets/vendor/jquery/jquery.min.js"></script>
-<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 {{-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> --}}
@@ -845,12 +845,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-<script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="{{asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
-<script src="/assets/js/jqBootstrapValidation.js"></script>
-<script src="/assets/js/contact_me.js"></script>
+<script src="{{asset('assets/js/jqBootstrapValidation.js')}}"></script>
+<script src="{{asset('assets/js/contact_me.js')}}"></script>
 
-<script src="/assets/js/agency.min.js"></script>
+<script src="{{asset('assets/js/agency.min.js')}}"></script>
 
 </body>
 
