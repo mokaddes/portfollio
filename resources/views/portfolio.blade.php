@@ -248,24 +248,6 @@
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card-body">
             <div class="fa-stack fa-1x mb-3">
-              <img src="{{ asset('assets/icons/nette.svg') }}" alt="Nette">
-            </div>
-            <h4>Nette</h4>
-            <p class="text-muted">PHP framework Nette</p>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card-body">
-            <div class="fa-stack fa-1x mb-3">
-              <img src="{{ asset('assets/icons/symfony.svg') }}" alt="Symfony">
-            </div>
-            <h4>Symfony</h4>
-            <p class="text-muted">PHP framework Symfony</p>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card-body">
-            <div class="fa-stack fa-1x mb-3">
               <img src="{{ asset('assets/icons/laravel.svg') }}" alt="Laravel">
             </div>
             <h4>Laravel</h4>
