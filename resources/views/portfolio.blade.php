@@ -311,7 +311,7 @@
         </div>
 
         <div class="row text-center">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
                         <img src="{{ asset('assets/icons/laravel.svg') }}" alt="Laravel">
@@ -320,16 +320,7 @@
                     <p class="text-muted">PHP framework Laravel</p>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/zendframework.svg') }}" alt="Zend Framework">
-                    </div>
-                    <h4>Zend Framework</h4>
-                    <p class="text-muted">PHP framework Zend Framework</p>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
                         <img src="{{ asset('assets/icons/orm.svg') }}" alt="ORM">
@@ -338,7 +329,7 @@
                     <p class="text-muted">Doctrine&nbsp;ORM, Eloquent&nbsp;ORM</p>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
                         <img src="{{ asset('assets/icons/bootstrap.svg') }}" alt="Bootstrap">
@@ -353,7 +344,7 @@
                         <img src="{{ asset('assets/icons/jquery.svg') }}" alt="jQuery" >
                     </div>
                     <h4>jQuery</h4>
-                    <p class="text-muted"> JS library</p>
+                    <p class="text-muted"> Javascript library</p>
                 </div>
             </div>
         </div>
