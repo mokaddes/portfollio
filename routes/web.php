@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageProcessingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('portfolio');
 });
+
+Route::get('/image', [ImageProcessingController::class ,'index']);
+Route::post('/image/store', [ImageProcessingController::class ,'store'])->name('image.store');

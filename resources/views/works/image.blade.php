@@ -11,7 +11,7 @@
         <div class="card">
             <div class="card-header">Photo Resizer</div>
             <div class="card-body">
-                <form action="{{ route('resize') }}" method="POST" enctype="multipart/form-data">
+                <form action="#" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="form-group">
