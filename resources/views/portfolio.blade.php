@@ -407,42 +407,42 @@
                     <p class="text-muted">Dependency Manager for PHP</p>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/phpunit.svg') }}" alt="PHP Unit">
-                    </div>
-                    <h4>PHP Unit</h4>
-                    <p class="text-muted">Unit tests</p>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/phpstan.svg') }}" alt="PHPStan">
-                    </div>
-                    <h4>PHPStan</h4>
-                    <p class="text-muted">PHP Static Analysis Tool</p>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/rabbitmq.svg') }}" alt="RabbitMQ">
-                    </div>
-                    <h4>RabbitMQ</h4>
-                    <p class="text-muted">Message Queuing</p>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/aws.svg') }}" alt="AWS">
-                    </div>
-                    <h4>AWS</h4>
-                    <p class="text-muted">Amazon Web Services</p>
-                </div>
-            </div>
+{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+{{--                <div class="card-body">--}}
+{{--                    <div class="fa-stack fa-1x mb-3">--}}
+{{--                        <img src="{{ asset('assets/icons/phpunit.svg') }}" alt="PHP Unit">--}}
+{{--                    </div>--}}
+{{--                    <h4>PHP Unit</h4>--}}
+{{--                    <p class="text-muted">Unit tests</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+{{--                <div class="card-body">--}}
+{{--                    <div class="fa-stack fa-1x mb-3">--}}
+{{--                        <img src="{{ asset('assets/icons/phpstan.svg') }}" alt="PHPStan">--}}
+{{--                    </div>--}}
+{{--                    <h4>PHPStan</h4>--}}
+{{--                    <p class="text-muted">PHP Static Analysis Tool</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+{{--                <div class="card-body">--}}
+{{--                    <div class="fa-stack fa-1x mb-3">--}}
+{{--                        <img src="{{ asset('assets/icons/rabbitmq.svg') }}" alt="RabbitMQ">--}}
+{{--                    </div>--}}
+{{--                    <h4>RabbitMQ</h4>--}}
+{{--                    <p class="text-muted">Message Queuing</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+{{--                <div class="card-body">--}}
+{{--                    <div class="fa-stack fa-1x mb-3">--}}
+{{--                        <img src="{{ asset('assets/icons/aws.svg') }}" alt="AWS">--}}
+{{--                    </div>--}}
+{{--                    <h4>AWS</h4>--}}
+{{--                    <p class="text-muted">Amazon Web Services</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -452,15 +452,15 @@
                     <p class="text-muted">Think in objects</p>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/dry.svg') }}" alt="DRY">
-                    </div>
-                    <h4>DRY</h4>
-                    <p class="text-muted">Don't repeat yourself</p>
-                </div>
-            </div>
+{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+{{--                <div class="card-body">--}}
+{{--                    <div class="fa-stack fa-1x mb-3">--}}
+{{--                        <img src="{{ asset('assets/icons/dry.svg') }}" alt="DRY">--}}
+{{--                    </div>--}}
+{{--                    <h4>DRY</h4>--}}
+{{--                    <p class="text-muted">Don't repeat yourself</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 </section>
