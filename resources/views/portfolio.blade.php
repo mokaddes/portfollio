@@ -86,7 +86,7 @@
     <div class="container">
         <div class="intro-text">
             <p class="intro-lead-in">Mokaddes Hosain</p>
-            <h1 class="intro-heading text-uppercase"><strong>PHP Developer</strong></h1>
+            <h1 class="intro-heading text-uppercase"><strong>Laravel Developer</strong></h1>
             <p>portfolio</p>
             {{-- <p class="text-muted">1.0.0-beta</p> --}}
         </div>
@@ -186,6 +186,15 @@
                     </div>
                     <h3 class="service-heading">REST API</h3>
                     <p class="text-muted">I design and develop RESTful APIs for seamless integration of web services</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card-body">
+                    <div class="fa-stack fa-1x mb-3">
+                        <img src="{{ asset('assets/icons/swagger.svg') }}" alt="REST API" style="width: 60px;">
+                    </div>
+                    <h3 class="service-heading">Swagger/OpenAPI</h3>
+                    <p class="text-muted">I use Swagger/OpenAPI to streamline RESTful API design for seamless web services integration</p>
                 </div>
             </div>
 
