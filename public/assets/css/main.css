@@ -61,3 +61,19 @@ img.img-desaturated:hover {
   text-transform: none;
   color: #6c757d;
 }
+#projects .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects .row {
+    margin: -15px;
+}
+#projects img {
+    width: 60%;
+    height: 150px;
+}
+
+#projects .col-12 {
+    padding: 15px;
+}

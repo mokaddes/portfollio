@@ -165,17 +165,19 @@
                         <img src="{{ asset('assets/icons/bootstrap.svg') }}" alt="Bootstrap">
                     </div>
                     <h3 class="service-heading">Bootstrap</h3>
-                    <p class="text-muted">I utilize Bootstrap framework for responsive and mobile-first web development</p>
+                    <p class="text-muted">I utilize Bootstrap framework for responsive and mobile-first web
+                        development</p>
                 </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/jquery.svg') }}" alt="jQuery" >
+                        <img src="{{ asset('assets/icons/jquery.svg') }}" alt="jQuery">
                     </div>
                     <h3 class="service-heading">jQuery</h3>
-                    <p class="text-muted">I use jQuery library for simplifying DOM manipulation and AJAX interactions</p>
+                    <p class="text-muted">I use jQuery library for simplifying DOM manipulation and AJAX
+                        interactions</p>
                 </div>
             </div>
 
@@ -194,7 +196,8 @@
                         <img src="{{ asset('assets/icons/swagger.svg') }}" alt="REST API" style="width: 60px;">
                     </div>
                     <h3 class="service-heading">Swagger/OpenAPI</h3>
-                    <p class="text-muted">I use Swagger/OpenAPI to streamline RESTful API design for seamless web services integration</p>
+                    <p class="text-muted">I use Swagger/OpenAPI to streamline RESTful API design for seamless web
+                        services integration</p>
                 </div>
             </div>
 
@@ -233,78 +236,126 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="https://www.knihovny.cz" title="knihovny.cz" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated"
-                             src="/assets/img/projects/knihovny.cz.svg') }}" alt="knihovny.cz">
-                    </a>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://www.tclibrary.com" title="TCLI Library" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">TCLI Library</h4>
+                        </a>
+                        <a href="https://www.tclibrary.com" title="TCLI Library" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/tcli.png') }}" alt="TCLI Library Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            An innovative online library management platform with integrated forums, clubs, and REST API support for seamless app integration
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="https://www.inpage.cz/" title="inPage" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated"
-                             src="/assets/img/projects/inpage.svg') }}" alt="inPage">
-                    </a>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://www.brp.online" title="BRP" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">BRP</h4>
+                        </a>
+                        <a href="https://www.brp.online" title="BRP" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/brp.gif') }}" alt="BRP Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A comprehensive e-commerce platform for tuning, racing, drifting, drag racing, and conversions.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="https://www.zoner.eu/" title="ZONER software" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/zoner.svg') }}"
-                             alt="ZONER software">
-                    </a>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://www.zentune.online" title="Zentune" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">Zentune</h4>
+                        </a>
+                        <a href="https://www.zentune.online" title="Zentune" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/zentune.png') }}" alt="Zentune Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A platform that develops modified files for all vehicles including stage. Utilized Laravel REST API for smooth app integration.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="https://www.zoner.cz/" title="Zoner Photo Studio" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/zps.svg') }}"
-                             alt="Zoner Photo Studio">
-                    </a>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://everisamting.com/" title="Everisamting" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">Everisamting</h4>
+                        </a>
+                        <a href="https://everisamting.com/" title="Everisamting" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/everisamting.png') }}" alt="Everisamting Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A classified platform that seamlessly incorporates event management, leveraging Laravel REST API for seamless app integration.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="https://www.sslmarket.cz/" title="SSL market" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated"
-                             src="/assets/img/projects/sslmarket.svg') }}" alt="SSL market">
-                    </a>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://serviceprovider.ae/" title="Service Provider" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">Service Provider</h4>
+                        </a>
+                        <a href="https://serviceprovider.ae/" title="Service Provider" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/sp.png') }}" alt="Service Provider Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A platform facilitating interaction between service providers and customers, offering a range of services.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="https://www.czechia.com/" title="Czechia" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated"
-                             src="/assets/img/projects/czechia.svg') }}" alt="Czechia">
-                    </a>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://enjoycitytours.com/" title="Enjoy City Tour" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">Enjoy City Tour</h4>
+                        </a>
+                        <a href="https://enjoycitytours.com/" title="Enjoy City Tour" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/ect.png') }}" alt="Enjoy City Tour Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A car booking platform for users to find and book exciting activities, guided tours, and sightseeing adventures.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="http://gransy.cz/" title="Gransy" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated"
-                             src="/assets/img/projects/gransy.svg') }}" alt="Gransy">
-                    </a>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://enjoycitytours.com/" title="Dhereye Delivery" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">Dhereye Delivery</h4>
+                        </a>
+                        <a href="https://enjoycitytours.com/" title="Dhereye Delivery" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/dhereye.png') }}" alt="Dhereye Delivery Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A courier management platform catering to both corporate and retail customers, featuring product tracking capabilities
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="http://www.langreal.cz/" title="langreal.cz" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated"
-                             src="/assets/img/projects/langreal.svg') }}" alt="langreal.cz">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <div class="card-body">
-                    <a href="https://www.rawmarket.cz" title="RAWmarket.cz" target="_blank" rel="nofollow">
-                        <img class="img-fluid d-block mx-auto img-desaturated" src="/assets/img/projects/rawmarket.png"
-                             alt="RAWmarket.cz">
-                    </a>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -350,7 +401,7 @@
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
-                        <img src="{{ asset('assets/icons/jquery.svg') }}" alt="jQuery" >
+                        <img src="{{ asset('assets/icons/jquery.svg') }}" alt="jQuery">
                     </div>
                     <h4>jQuery</h4>
                     <p class="text-muted"> Javascript library</p>
@@ -416,42 +467,42 @@
                     <p class="text-muted">Dependency Manager for PHP</p>
                 </div>
             </div>
-{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/phpunit.svg') }}" alt="PHP Unit">--}}
-{{--                    </div>--}}
-{{--                    <h4>PHP Unit</h4>--}}
-{{--                    <p class="text-muted">Unit tests</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/phpstan.svg') }}" alt="PHPStan">--}}
-{{--                    </div>--}}
-{{--                    <h4>PHPStan</h4>--}}
-{{--                    <p class="text-muted">PHP Static Analysis Tool</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/rabbitmq.svg') }}" alt="RabbitMQ">--}}
-{{--                    </div>--}}
-{{--                    <h4>RabbitMQ</h4>--}}
-{{--                    <p class="text-muted">Message Queuing</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/aws.svg') }}" alt="AWS">--}}
-{{--                    </div>--}}
-{{--                    <h4>AWS</h4>--}}
-{{--                    <p class="text-muted">Amazon Web Services</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/phpunit.svg') }}" alt="PHP Unit">--}}
+            {{--                    </div>--}}
+            {{--                    <h4>PHP Unit</h4>--}}
+            {{--                    <p class="text-muted">Unit tests</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/phpstan.svg') }}" alt="PHPStan">--}}
+            {{--                    </div>--}}
+            {{--                    <h4>PHPStan</h4>--}}
+            {{--                    <p class="text-muted">PHP Static Analysis Tool</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/rabbitmq.svg') }}" alt="RabbitMQ">--}}
+            {{--                    </div>--}}
+            {{--                    <h4>RabbitMQ</h4>--}}
+            {{--                    <p class="text-muted">Message Queuing</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/aws.svg') }}" alt="AWS">--}}
+            {{--                    </div>--}}
+            {{--                    <h4>AWS</h4>--}}
+            {{--                    <p class="text-muted">Amazon Web Services</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -461,15 +512,15 @@
                     <p class="text-muted">Think in objects</p>
                 </div>
             </div>
-{{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/dry.svg') }}" alt="DRY">--}}
-{{--                    </div>--}}
-{{--                    <h4>DRY</h4>--}}
-{{--                    <p class="text-muted">Don't repeat yourself</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-6 col-sm-4 col-md-3 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/dry.svg') }}" alt="DRY">--}}
+            {{--                    </div>--}}
+            {{--                    <h4>DRY</h4>--}}
+            {{--                    <p class="text-muted">Don't repeat yourself</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
         </div>
     </div>
 </section>
@@ -493,38 +544,38 @@
                     <p>SQL</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/adminer.svg') }}" alt="Adminer">--}}
-{{--                    </div>--}}
-{{--                    <p>Adminer</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/algolia.svg') }}" alt="Algolia">--}}
-{{--                    </div>--}}
-{{--                    <p>Algolia</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/angular.svg') }}" alt="Angular">--}}
-{{--                    </div>--}}
-{{--                    <p>Angular</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/bitmaps-graphics.svg') }}" alt="Bitmaps graphics">--}}
-{{--                    </div>--}}
-{{--                    <p>Bitmaps graphics</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/adminer.svg') }}" alt="Adminer">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Adminer</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/algolia.svg') }}" alt="Algolia">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Algolia</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/angular.svg') }}" alt="Angular">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Angular</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/bitmaps-graphics.svg') }}" alt="Bitmaps graphics">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Bitmaps graphics</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -541,46 +592,46 @@
                     <p>CSS 3</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/design-patterns.svg') }}" alt="Design patterns">--}}
-{{--                    </div>--}}
-{{--                    <p>Design patterns</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/digital-ocean.svg') }}" alt="Digital Ocean">--}}
-{{--                    </div>--}}
-{{--                    <p>Digital Ocean</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/docker.svg') }}" alt="Docker">--}}
-{{--                    </div>--}}
-{{--                    <p>Docker</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/drupal.svg') }}" alt="Drupal CMS">--}}
-{{--                    </div>--}}
-{{--                    <p>Drupal CMS</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/elasticsearch.svg') }}" alt="Elastic Search">--}}
-{{--                    </div>--}}
-{{--                    <p>Elastic Search</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/design-patterns.svg') }}" alt="Design patterns">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Design patterns</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/digital-ocean.svg') }}" alt="Digital Ocean">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Digital Ocean</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/docker.svg') }}" alt="Docker">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Docker</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/drupal.svg') }}" alt="Drupal CMS">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Drupal CMS</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/elasticsearch.svg') }}" alt="Elastic Search">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Elastic Search</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -605,14 +656,14 @@
                     <p>Github</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/gitkraken.svg') }}" alt="Gitkraken">--}}
-{{--                    </div>--}}
-{{--                    <p>Gitkraken</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/gitkraken.svg') }}" alt="Gitkraken">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Gitkraken</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -629,38 +680,38 @@
                     <p>HTML 5</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/illustrator.svg') }}" alt="Illustrator">--}}
-{{--                    </div>--}}
-{{--                    <p>Illustrator</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/java.svg') }}" alt="Java">--}}
-{{--                    </div>--}}
-{{--                    <p>Java</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/jenkins.svg') }}" alt="Jenkins">--}}
-{{--                    </div>--}}
-{{--                    <p>Jenkins</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/less.svg') }}" alt="Less">--}}
-{{--                    </div>--}}
-{{--                    <p>Less</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/illustrator.svg') }}" alt="Illustrator">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Illustrator</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/java.svg') }}" alt="Java">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Java</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/jenkins.svg') }}" alt="Jenkins">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Jenkins</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/less.svg') }}" alt="Less">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Less</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -669,22 +720,22 @@
                     <p>Linux</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/mongodb.svg') }}" alt="MongoDB">--}}
-{{--                    </div>--}}
-{{--                    <p>MongoDB</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/node-js.svg') }}" alt="Node JS">--}}
-{{--                    </div>--}}
-{{--                    <p>Node JS</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/mongodb.svg') }}" alt="MongoDB">--}}
+            {{--                    </div>--}}
+            {{--                    <p>MongoDB</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/node-js.svg') }}" alt="Node JS">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Node JS</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -693,14 +744,14 @@
                     <p>NPM</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/owasp.svg') }}" alt="OWASP">--}}
-{{--                    </div>--}}
-{{--                    <p>OWASP</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/owasp.svg') }}" alt="OWASP">--}}
+            {{--                    </div>--}}
+            {{--                    <p>OWASP</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -709,14 +760,14 @@
                     <p>Photoshop</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/php-fig.svg') }}" alt="PHP-FIG">--}}
-{{--                    </div>--}}
-{{--                    <p>PHP-FIG</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/php-fig.svg') }}" alt="PHP-FIG">--}}
+            {{--                    </div>--}}
+            {{--                    <p>PHP-FIG</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -725,46 +776,46 @@
                     <p>Python</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/sass.svg') }}" alt="Sass">--}}
-{{--                    </div>--}}
-{{--                    <p>Sass</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/slack.svg') }}" alt="Slack">--}}
-{{--                    </div>--}}
-{{--                    <p>Slack</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/typescript.svg') }}" alt="TypeScript">--}}
-{{--                    </div>--}}
-{{--                    <p>TypeScript</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/uml.svg') }}" alt="UML">--}}
-{{--                    </div>--}}
-{{--                    <p>UML</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/vector-graphics.svg') }}" alt="Vector graphics">--}}
-{{--                    </div>--}}
-{{--                    <p>Vector graphics</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/sass.svg') }}" alt="Sass">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Sass</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/slack.svg') }}" alt="Slack">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Slack</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/typescript.svg') }}" alt="TypeScript">--}}
+            {{--                    </div>--}}
+            {{--                    <p>TypeScript</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/uml.svg') }}" alt="UML">--}}
+            {{--                    </div>--}}
+            {{--                    <p>UML</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/vector-graphics.svg') }}" alt="Vector graphics">--}}
+            {{--                    </div>--}}
+            {{--                    <p>Vector graphics</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
@@ -789,14 +840,14 @@
                     <p>XML</p>
                 </div>
             </div>
-{{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
-{{--                <div class="card-body">--}}
-{{--                    <div class="fa-stack fa-1x mb-3">--}}
-{{--                        <img src="{{ asset('assets/icons/xslt.svg') }}" alt="XSLT">--}}
-{{--                    </div>--}}
-{{--                    <p>XSLT</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="col-4 col-sm-3 col-md-2 col-lg-2">--}}
+            {{--                <div class="card-body">--}}
+            {{--                    <div class="fa-stack fa-1x mb-3">--}}
+            {{--                        <img src="{{ asset('assets/icons/xslt.svg') }}" alt="XSLT">--}}
+            {{--                    </div>--}}
+            {{--                    <p>XSLT</p>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
         </div>
     </div>
 </section>
