@@ -10,6 +10,7 @@
 
     <meta name="description" content="Mokaddes Hosain - Software Developer | portfolio " . {{date('Y')}}>
     <meta name="author" content="Mokaddes Hosain">
+    <meta name="og:image" content="{{ asset('assets/mokaddes.jpg') }}">
 
     @include('layouts.style')
     @stack('css')
