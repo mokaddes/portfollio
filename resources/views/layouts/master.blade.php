@@ -12,7 +12,7 @@
     <meta name="author" content="Mokaddes Hosain">
     <meta property="og:title" content="Mokaddes Hosain - Software Developer"/>
     <meta property="og:description" content="Mokaddes Hosain - Software Developer | portfolio "  {{date('Y')}}>
-    <meta property="og:image" content="{{ asset('assets/images/mokaddes.jpg') }}">
+    <meta property="og:image" content="{{ asset('public/assets/images/mokaddes.jpg') }}">
     <meta property="og:image:width" content="700"/>
     <meta property="og:image:height" content="400"/>
     <meta property="og:site_name" content="Mokaddes"/>
