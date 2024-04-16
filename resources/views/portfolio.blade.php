@@ -10,6 +10,7 @@
 
     <meta name="description" content="Mokaddes Hosain - Software Developer | portfolio " . {{date('Y')}}>
     <meta name="author" content="Mokaddes Hosain">
+    <meta name="og:image" content="{{ asset('assets/mokaddes.jpg') }}">
 
     {{-- <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
