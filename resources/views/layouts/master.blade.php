@@ -11,8 +11,8 @@
     <meta name="description" content="Mokaddes Hosain - Software Developer | portfolio " . {{date('Y')}}>
     <meta name="author" content="Mokaddes Hosain">
     <meta property="og:image" content="{{ asset('assets/mokaddes.jpg') }}">
-    <meta property="og:image:width" content="700"/>
-    <meta property="og:image:height" content="400"/>
+    <meta property="og:image:width" content="700px"/>
+    <meta property="og:image:height" content="400px"/>
 
     @include('layouts.style')
     @stack('css')
