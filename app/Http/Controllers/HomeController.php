@@ -50,7 +50,7 @@ class HomeController extends Controller
             'message' => $request->message,
             'ip_address' => $request->ip()
         ];
-        $mail = 'mr.mokaddes@gmail.com';
+        $mail = 'info@mokaddes.com';
         Notification::route('mail', $mail)->notify(new ContactMailNotification($data));
         $session = [
             'message' => 'Thank you for your message. We will get back to you soon.',

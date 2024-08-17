@@ -10,6 +10,7 @@ use Illuminate\Notifications\Notification;
 class ContactMailNotification extends Notification
 {
     use Queueable;
+
     public $data;
 
     /**
@@ -36,12 +37,13 @@ class ContactMailNotification extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-                    ->subject('Contact Form Submission')
-                    ->line('Name: '.$this->data['name'])
-                    ->line('Email: '.$this->data['email'])
-                    ->line('Message: '.$this->data['message'])
-                    ->line('Ip Address: '.$this->data['ip_address'])
-                    ->line('Thank you for using our application!');
+            ->subject('Contact Form Submission')
+            ->line('You have received a new contact form submission.')
+            ->line('Name: ' . $this->data['name'])
+            ->line('Email: ' . $this->data['email'])
+            ->line('Message: ' . $this->data['message'])
+            ->line('Ip Address: ' . $this->data['ip_address'])
+            ->line('Thank you for using our application!');
     }
 
     /**
