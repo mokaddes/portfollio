@@ -37,6 +37,13 @@ class HomeController extends Controller
             'message' => 'required'
         ]);
 
+        if ($valid->fails()) {
+            $session = [
+                'message' => $valid->errors()->first(),
+                'alert-type' => 'error'
+            ];
+            return redirect()->back()->with($session);
+        }
         $data = [
             'name' => $request->name,
             'email' => $request->email,
