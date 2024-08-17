@@ -2,9 +2,7 @@
     File Name: dropzone.js
     Description: dropzone
     --------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
+
 ==========================================================================================*/
 
 Dropzone.options.dpzSingleFile = {

@@ -18,6 +18,7 @@
     <meta property="og:site_name" content="Mokaddes"/>
     <meta property="og:url" content="https://mokaddes.com"/>
     <meta property="og:type" content="WEBSITE"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @include('layouts.style')
     @stack('css')

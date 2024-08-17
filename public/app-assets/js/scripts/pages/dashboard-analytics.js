@@ -2,9 +2,7 @@
     File Name: dashboard-analytics.js
     Description: dashboard analytics page content with Apexchart Examples
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
+
 ==========================================================================================*/
 
 $(window).on("load", function () {
@@ -546,7 +544,7 @@ $(window).on("load", function () {
   });
 
   if ($(window).width() > 1200 && !$("body").hasClass("menu-collapsed")) {
-    tour.start()
+    // tour.start()
   }
   else {
     tour.cancel()

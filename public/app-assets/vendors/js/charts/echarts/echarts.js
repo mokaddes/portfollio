@@ -20468,7 +20468,7 @@ var colorPaletteMixin = {
  *         x: xAxisModel,
  *         y: undefined
  *     }),
- *     // It also indicate that whether there is category axis.
+ *     // It also indicate that whether there is categories axis.
  *     firstCategoryDimIndex: 1,
  *     // To replace user specified encode.
  * }
@@ -20954,7 +20954,7 @@ function completeBySourceData(data, sourceFormat, seriesLayoutBy, sourceHeader, 
         // Rule: Most of the first line are string: it is header.
         // Caution: consider a line with 5 string and 1 number,
         // it still can not be sure it is a head, because the
-        // 5 string may be 5 values of category columns.
+        // 5 string may be 5 values of categories columns.
         if (sourceHeader === 'auto' || sourceHeader == null) {
             arrayRowsTravelFirst(function (val) {
                 // '-' is regarded as null/undefined.
@@ -21145,7 +21145,7 @@ function makeDefaultEncode(
                 // ??? TODO give a better default series name rule?
                 // especially when encode x y specified.
                 // consider: when mutiple series share one dimension
-                // category axis, series name should better use
+                // categories axis, series name should better use
                 // the other dimsion name. On the other hand, use
                 // both dimensions name.
 
@@ -21153,12 +21153,12 @@ function makeDefaultEncode(
                 // encodeTooltip.push(dataDim);
                 // encodeLabel.push(dataDim);
             }
-            // In category way, category axis.
+            // In categories way, categories axis.
             else if (coordSysDefine.categoryAxisMap.get(coordDim)) {
                 encode[coordDim] = 0;
                 encodeItemName.push(0);
             }
-            // In category way, non-category axis.
+            // In categories way, non-categories axis.
             else {
                 var dataDim = datasetRecord.categoryWayDim++;
                 encode[coordDim] = dataDim;
@@ -23444,7 +23444,7 @@ function converDataValue(value, dimInfo) {
     // Performance sensitive.
     var dimType = dimInfo && dimInfo.type;
     if (dimType === 'ordinal') {
-        // If given value is a category string
+        // If given value is a categories string
         var ordinalMeta = dimInfo && dimInfo.ordinalMeta;
         return ordinalMeta
             ? ordinalMeta.parseAndCollect(value)
@@ -24324,7 +24324,7 @@ var SeriesModel = ComponentModel.extend({
 
         function formatArrayValue(value) {
             // ??? TODO refactor these logic.
-            // check: category-no-encode-has-axis-data in dataset.html
+            // check: categories-no-encode-has-axis-data in dataset.html
             var vertially = reduce(value, function (vertially, val, idx) {
                 var dimItem = data.getDimensionInfo(idx);
                 return vertially |= dimItem && dimItem.tooltip !== false && dimItem.displayName != null;
@@ -28949,7 +28949,7 @@ function createExtensionAPI(ecInstance) {
  * `chart.on('click', query, handler);`
  * The `query` can be:
  * + The component type query string, only `mainType` or `mainType.subType`,
- *   like: 'xAxis', 'series', 'xAxis.category' or 'series.line'.
+ *   like: 'xAxis', 'series', 'xAxis.categories' or 'series.line'.
  * + The component query object, like:
  *   `{seriesIndex: 2}`, `{seriesName: 'xx'}`, `{seriesId: 'some'}`,
  *   `{xAxisIndex: 2}`, `{xAxisName: 'xx'}`, `{xAxisId: 'some'}`.
@@ -30477,8 +30477,8 @@ listProto._initDataFromProvider = function (start, end) {
         // Each data item is value
         // [1, 2]
         // 2
-        // Bar chart, line chart which uses category axis
-        // only gives the 'y' value. 'x' value is the indices of category
+        // Bar chart, line chart which uses categories axis
+        // only gives the 'y' value. 'x' value is the indices of categories
         // Use a tempValue to normalize the value to be a (x, y) value
         var chunkIndex = Math.floor(idx / chunkSize);
         var chunkOffset = idx % chunkSize;
@@ -32747,22 +32747,22 @@ proto$1.parseAndCollect = function (category) {
     var index;
     var needCollect = this._needCollect;
 
-    // The value of category dim can be the index of the given category set.
+    // The value of categories dim can be the index of the given categories set.
     // This feature is only supported when !needCollect, because we should
     // consider a common case: a value is 2017, which is a number but is
-    // expected to be tread as a category. This case usually happen in dataset,
+    // expected to be tread as a categories. This case usually happen in dataset,
     // where it happent to be no need of the index feature.
     if (typeof category !== 'string' && !needCollect) {
         return category;
     }
 
     // Optimize for the scenario:
-    // category is ['2012-01-01', '2012-01-02', ...], where the input
+    // categories is ['2012-01-01', '2012-01-02', ...], where the input
     // data has been ensured not duplicate and is large data.
     // Notice, if a dataset dimension provide categroies, usually echarts
     // should remove duplication except user tell echarts dont do that
     // (set axis.deduplication = false), because echarts do not know whether
-    // the values in the category dimension has duplication (consider the
+    // the values in the categories dimension has duplication (consider the
     // parallel-aqi example)
     if (needCollect && !this._deduplication) {
         index = this.categories.length;
@@ -33294,13 +33294,13 @@ function getAxisKey(axis) {
 
 /**
  * @param {Object} opt
- * @param {module:echarts/coord/Axis} opt.axis Only support category axis currently.
+ * @param {module:echarts/coord/Axis} opt.axis Only support categories axis currently.
  * @param {number} opt.count Positive interger.
  * @param {number} [opt.barWidth]
  * @param {number} [opt.barMaxWidth]
  * @param {number} [opt.barGap]
  * @param {number} [opt.barCategoryGap]
- * @return {Object} {width, offset, offsetCenter} If axis.type is not 'category', return undefined.
+ * @return {Object} {width, offset, offsetCenter} If axis.type is not 'categories', return undefined.
  */
 function getLayoutOnAxis(opt) {
     var params = [];
@@ -33377,7 +33377,7 @@ function makeColumnLayout(barSeries) {
 }
 
 function doCalBarWidthAndOffset(seriesInfoList) {
-    // Columns info on each category axis. Key is cartesian name
+    // Columns info on each categories axis. Key is cartesian name
     var columnsMap = {};
 
     each$1(seriesInfoList, function (seriesInfo, idx) {
@@ -34391,7 +34391,7 @@ function ifAxisCrossZero(axis) {
  * @return {Function} Label formatter function.
  *         param: {number} tickValue,
  *         param: {number} idx, the index in all ticks.
- *                         If category axis, this param is not requied.
+ *                         If categories axis, this param is not requied.
  *         return: {string} label string.
  */
 function makeLabelFormatter(axis) {
@@ -34401,7 +34401,7 @@ function makeLabelFormatter(axis) {
     if (typeof labelFormatter === 'string') {
         labelFormatter = (function (tpl) {
             return function (val) {
-                // For category axis, get raw value; for numeric axis,
+                // For categories axis, get raw value; for numeric axis,
                 // get foramtted label like '1,333,444'.
                 val = axis.scale.getLabel(val);
                 return tpl.replace('{value}', val != null ? val : '');
@@ -34413,7 +34413,7 @@ function makeLabelFormatter(axis) {
     else if (typeof labelFormatter === 'function') {
         return function (tickValue, idx) {
             // The original intention of `idx` is "the index of the tick in all ticks".
-            // But the previous implementation of category axis do not consider the
+            // But the previous implementation of categories axis do not consider the
             // `axisLabel.interval`, which cause that, for example, the `interval` is
             // `1`, then the ticks "name5", "name7", "name9" are displayed, where the
             // corresponding `idx` are `0`, `2`, `4`, but not `0`, `1`, `2`. So we keep
@@ -34432,9 +34432,9 @@ function makeLabelFormatter(axis) {
 }
 
 function getAxisRawValue(axis, value) {
-    // In category axis with data zoom, tick is not the original
+    // In categories axis with data zoom, tick is not the original
     // index of axis.data. So tick should not be exposed to user
-    // in category axis.
+    // in categories axis.
     return axis.type === 'category' ? axis.scale.getLabel(value) : value;
 }
 
@@ -34456,7 +34456,7 @@ function estimateLabelUnionRect(axis) {
     var tickCount;
     var categoryScaleExtent = scale.getExtent();
 
-    // Optimize for large category data, avoid call `getTicks()`.
+    // Optimize for large categories data, avoid call `getTicks()`.
     if (isCategory) {
         tickCount = scale.count();
     }
@@ -35516,7 +35516,7 @@ function makeCategoryTicks(axis, tickModel) {
     var ticks;
     var tickCategoryInterval;
 
-    // Optimize for the case that large category data and no label displayed,
+    // Optimize for the case that large categories data and no label displayed,
     // we should not return all ticks.
     if (!tickModel.get('show') || axis.scale.isBlank()) {
         ticks = [];
@@ -35560,7 +35560,7 @@ function makeRealNumberLabels(axis) {
     };
 }
 
-// Large category data calculation is performence sensitive, and ticks and label
+// Large categories data calculation is performence sensitive, and ticks and label
 // probably be fetched by multiple times. So we cache the result.
 // axis is created each time during a ec process, so we do not need to clear cache.
 function getListCache(axis, prop) {
@@ -35589,7 +35589,7 @@ function makeAutoCategoryInterval(axis) {
 }
 
 /**
- * Calculate interval for category axis ticks and labels.
+ * Calculate interval for categories axis ticks and labels.
  * To get precise result, at least one of `getRotate` and `isHorizontal`
  * should be implemented in axis.
  */
@@ -35602,7 +35602,7 @@ function calculateCategoryInterval(axis) {
     var ordinalExtent = ordinalScale.getExtent();
     // Providing this method is for optimization:
     // avoid generating a long array by `getTicks`
-    // in large category data case.
+    // in large categories data case.
     var tickCount = ordinalScale.count();
 
     if (ordinalExtent[1] - ordinalExtent[0] < 1) {
@@ -35622,7 +35622,7 @@ function calculateCategoryInterval(axis) {
     var maxW = 0;
     var maxH = 0;
 
-    // Caution: Performance sensitive for large category data.
+    // Caution: Performance sensitive for large categories data.
     // Consider dataZoom, we should make appropriate step to avoid O(n) loop.
     for (; tickValue <= ordinalExtent[1]; tickValue += step) {
         var width = 0;
@@ -35713,7 +35713,7 @@ function makeLabelsByNumericCategoryInterval(axis, categoryInterval, onlyTick) {
     // (1) Only add min max label here but leave overlap checking
     // to render stage, which also ensure the returned list
     // suitable for splitLine and splitArea rendering.
-    // (2) Scales except category always contain min max label so
+    // (2) Scales except categories always contain min max label so
     // do not need to perform this process.
     var showAllLabel = shouldShowAllLabels(axis);
     var includeMinLabel = labelModel.get('showMinLabel') || showAllLabel;
@@ -35748,7 +35748,7 @@ function makeLabelsByNumericCategoryInterval(axis, categoryInterval, onlyTick) {
 }
 
 // When interval is function, the result `false` means ignore the tick.
-// It is time consuming for large category data.
+// It is time consuming for large categories data.
 function makeLabelsByCustomizedCategoryInterval(axis, categoryInterval, onlyTick) {
     var ordinalScale = axis.scale;
     var labelFormatter = makeLabelFormatter(axis);
@@ -35936,7 +35936,7 @@ Axis.prototype = {
     /**
      * Different from `zrUtil.map(axis.getTicks(), axis.dataToCoord, axis)`,
      * `axis.getTicksCoords` considers `onBand`, which is used by
-     * `boundaryGap:true` of category axis and splitLine and splitArea.
+     * `boundaryGap:true` of categories axis and splitLine and splitArea.
      * @param {Object} [opt]
      * @param {number} [opt.tickModel=axis.model.getModel('axisTick')]
      * @param {boolean} [opt.clamp] If `true`, the first and the last
@@ -36030,7 +36030,7 @@ Axis.prototype = {
     getRotate: null,
 
     /**
-     * Only be called in category axis.
+     * Only be called in categories axis.
      * Can be overrided, consider other axes like in 3D.
      * @return {number} Auto interval for cateogry axis tick and label
      */
@@ -37914,7 +37914,7 @@ function getIsIgnoreFunc(seriesModel, data, coordSys) {
         return;
     }
 
-    // Note that category label interval strategy might bring some weird effect
+    // Note that categories label interval strategy might bring some weird effect
     // in some scenario: users may wonder why some of the symbols are not
     // displayed. So we show all symbols as possible as we can.
     if (isAuto
@@ -37924,7 +37924,7 @@ function getIsIgnoreFunc(seriesModel, data, coordSys) {
         return;
     }
 
-    // Otherwise follow the label interval strategy on category axis.
+    // Otherwise follow the label interval strategy on categories axis.
     var categoryDataDim = data.mapDimension(categoryAxis.dim);
     var labelMap = {};
 
@@ -37938,9 +37938,9 @@ function getIsIgnoreFunc(seriesModel, data, coordSys) {
 }
 
 function canShowAllSymbolForCategory(categoryAxis, data) {
-    // In mose cases, line is monotonous on category axis, and the label size
+    // In mose cases, line is monotonous on categories axis, and the label size
     // is close with each other. So we check the symbol size and some of the
-    // label size alone with the category axis to estimate whether all symbol
+    // label size alone with the categories axis to estimate whether all symbol
     // can be shown without overlap.
     var axisExtent = categoryAxis.getExtent();
     var availSize = Math.abs(axisExtent[1] - axisExtent[0]) / categoryAxis.scale.count();
@@ -38083,7 +38083,7 @@ Chart.extend({
             });
 
             // In the case data zoom triggerred refreshing frequently
-            // Data may not change if line has a category axis. So it should animate nothing
+            // Data may not change if line has a categories axis. So it should animate nothing
             if (!isPointsSame(this._stackedOnPoints, stackedOnPoints)
                 || !isPointsSame(this._points, points)
             ) {
@@ -38959,7 +38959,7 @@ var Axis2D = function (dim, scale, coordExtent, axisType, position) {
     Axis.call(this, dim, scale, coordExtent);
     /**
      * Axis type
-     *  - 'category'
+     *  - 'categories'
      *  - 'value'
      *  - 'time'
      *  - 'log'
@@ -39162,8 +39162,8 @@ var axisDefault = {};
 axisDefault.categoryAxis = merge({
     // The gap at both ends of the axis. For categoryAxis, boolean.
     boundaryGap: true,
-    // Set false to faster category collection.
-    // Only usefull in the case like: category is
+    // Set false to faster categories collection.
+    // Only usefull in the case like: categories is
     // ['2012-01-01', '2012-01-02', ...], where the input
     // data has been ensured not duplicate and is large data.
     // null means "auto":
@@ -39412,7 +39412,7 @@ var AxisModel = ComponentModel.extend({
 });
 
 function getAxisType(axisDim, option) {
-    // Default axis with data is category axis
+    // Default axis with data is categories axis
     return option.type || (option.data ? 'category' : 'value');
 }
 
@@ -39592,7 +39592,7 @@ function fixAxisOnZero(axesMap, otherAxisDim, axis, onZeroRecords) {
     };
 
     // onZero can not be enabled in these two situations:
-    // 1. When any other axis is a category axis.
+    // 1. When any other axis is a categories axis.
     // 2. When no axis is cross 0 point.
     var otherAxes = axesMap[otherAxisDim];
 
@@ -40789,9 +40789,9 @@ function buildAxisLabel(axisBuilder, axisModel, opt) {
                 || labelLayout.textVerticalAlign,
             textFill: typeof textColor === 'function'
                 ? textColor(
-                    // (1) In category axis with data zoom, tick is not the original
+                    // (1) In categories axis with data zoom, tick is not the original
                     // index of axis.data. So tick should not be exposed to user
-                    // in category axis.
+                    // in categories axis.
                     // (2) Compatible with previous version, which always use formatted label as
                     // input. But in interval scale the formatted label is like '223,445', which
                     // maked user repalce ','. So we modify it to return original val but remain
@@ -41003,7 +41003,7 @@ function makeAxisPointerModel(
         }
     );
 
-    // category axis do not auto snap, otherwise some tick that do not
+    // categories axis do not auto snap, otherwise some tick that do not
     // has value can not be hovered. value/time/log axis default snap if
     // triggered from tooltip and trigger tooltip.
     volatileOption.snap = axis.type !== 'category' && !!triggerTooltip;
@@ -41111,7 +41111,7 @@ function fixValue(axisModel) {
     var status = axisPointerModel.get('status');
     var value = axisPointerModel.get('value');
 
-    // Parse init value for category and time axis.
+    // Parse init value for categories and time axis.
     if (value != null) {
         value = scale.parse(value);
     }
@@ -44316,7 +44316,7 @@ function IndicatorAxis(dim, scale, radiusExtent) {
 
     /**
      * Axis type
-     *  - 'category'
+     *  - 'categories'
      *  - 'value'
      *  - 'time'
      *  - 'log'
@@ -52106,7 +52106,7 @@ var CATEGORY_DEFAULT_VISUAL_INDEX = -1;
 /**
  * @param {Object} option
  * @param {string} [option.type] See visualHandlers.
- * @param {string} [option.mappingMethod] 'linear' or 'piecewise' or 'category' or 'fixed'
+ * @param {string} [option.mappingMethod] 'linear' or 'piecewise' or 'categories' or 'fixed'
  * @param {Array.<number>=} [option.dataExtent] [minExtent, maxExtent],
  *                                              required when mappingMethod is 'linear'
  * @param {Array.<Object>=} [option.pieceList] [
@@ -52117,16 +52117,16 @@ var CATEGORY_DEFAULT_VISUAL_INDEX = -1;
  *                                            required when mappingMethod is 'piecewise'.
  *                                            Visual for only each piece can be specified.
  * @param {Array.<string|Object>=} [option.categories] ['cate1', 'cate2']
- *                                            required when mappingMethod is 'category'.
+ *                                            required when mappingMethod is 'categories'.
  *                                            If no option.categories, categories is set
  *                                            as [0, 1, 2, ...].
- * @param {boolean} [option.loop=false] Whether loop mapping when mappingMethod is 'category'.
+ * @param {boolean} [option.loop=false] Whether loop mapping when mappingMethod is 'categories'.
  * @param {(Array|Object|*)} [option.visual]  Visual data.
- *                                            when mappingMethod is 'category',
+ *                                            when mappingMethod is 'categories',
  *                                            visual data can be array or object
  *                                            (like: {cate1: '#222', none: '#fff'})
  *                                            or primary types (which represents
- *                                            defualt category visual), otherwise visual
+ *                                            defualt categories visual), otherwise visual
  *                                            can be array or primary (which will be
  *                                            normalized to array).
  *
@@ -55888,7 +55888,7 @@ var categoryVisual = function (ecModel) {
             }
         });
 
-        // Assign category color to visual
+        // Assign categories color to visual
         if (categoriesData.count()) {
             data.each(function (idx) {
                 var model = data.getItemModel(idx);
@@ -58036,7 +58036,7 @@ var ParallelAxis = function (dim, scale, coordExtent, axisType, axisIndex) {
 
     /**
      * Axis type
-     *  - 'category'
+     *  - 'categories'
      *  - 'value'
      *  - 'time'
      *  - 'log'
@@ -62214,7 +62214,7 @@ var seriesModelMixin = {
     getInitialData: function (option, ecModel) {
         // When both types of xAxis and yAxis are 'value', layout is
         // needed to be specified by user. Otherwise, layout can be
-        // judged by which axis is category.
+        // judged by which axis is categories.
 
         var ordinalMeta;
 
@@ -65684,7 +65684,7 @@ extendChartView({
 
             if (__DEV__) {
                 if (!(xAxis.type === 'category' && yAxis.type === 'category')) {
-                    throw new Error('Heatmap on cartesian must have two category axes');
+                    throw new Error('Heatmap on cartesian must have two categories axes');
                 }
                 if (!(xAxis.onBand && yAxis.onBand)) {
                     throw new Error('Heatmap on cartesian must have two axes with boundaryGap true');
@@ -66796,7 +66796,7 @@ var SingleAxis = function (dim, scale, coordExtent, axisType, position) {
 
     /**
      * Axis type
-     * - 'category'
+     * - 'categories'
      * - 'value'
      * - 'time'
      * - 'log'
@@ -67807,7 +67807,7 @@ function buildPayloadsBySeries(value, axisInfo) {
 
         var diff = value - seriesNestestValue;
         var dist = Math.abs(diff);
-        // Consider category case
+        // Consider categories case
         if (dist <= minDist) {
             if (dist < minDist || (diff >= 0 && minDiff < 0)) {
                 minDist = dist;
@@ -72509,7 +72509,7 @@ function barLayoutPolar(seriesType, ecModel, api) {
  * Calculate bar width and offset for radial bar charts
  */
 function calRadialBar(barSeries, api) {
-    // Columns info on each category axis. Key is polar name
+    // Columns info on each categories axis. Key is polar name
     var columnsMap = {};
 
     each$1(barSeries, function (seriesModel, idx) {
@@ -72656,7 +72656,7 @@ function RadiusAxis(scale, radiusExtent) {
 
     /**
      * Axis type
-     *  - 'category'
+     *  - 'categories'
      *  - 'value'
      *  - 'time'
      *  - 'log'
@@ -72712,7 +72712,7 @@ function AngleAxis(scale, angleExtent) {
 
     /**
      * Axis type
-     *  - 'category'
+     *  - 'categories'
      *  - 'value'
      *  - 'time'
      *  - 'log'
@@ -72737,7 +72737,7 @@ AngleAxis.prototype = {
     angleToData: Axis.prototype.coordToData,
 
     /**
-     * Only be called in category axis.
+     * Only be called in categories axis.
      * Angle axis uses text height to decide interval
      *
      * @override
@@ -72751,7 +72751,7 @@ AngleAxis.prototype = {
         var ordinalExtent = ordinalScale.getExtent();
         // Providing this method is for optimization:
         // avoid generating a long array by `getTicks`
-        // in large category data case.
+        // in large categories data case.
         var tickCount = ordinalScale.count();
 
         if (ordinalExtent[1] - ordinalExtent[0] < 1) {
@@ -73128,7 +73128,7 @@ var polarAxisDefaultExtendedOption = {
 };
 
 function getAxisType$3(axisDim, option) {
-    // Default axis with data is category axis
+    // Default axis with data is categories axis
     return option.type || (option.data ? 'category' : 'value');
 }
 
@@ -73265,7 +73265,7 @@ function updatePolarScale(ecModel, api) {
     niceScaleExtent(angleAxis.scale, angleAxis.model);
     niceScaleExtent(radiusAxis.scale, radiusAxis.model);
 
-    // Fix extent of category angle axis
+    // Fix extent of categories angle axis
     if (angleAxis.type === 'category' && !angleAxis.onBand) {
         var extent = angleAxis.getExtent();
         var diff = 360 / angleAxis.scale.count();
@@ -76736,7 +76736,7 @@ var BLOCK_SPLITER = new Array(60).join('-');
 var ITEM_SPLITER = '\t';
 /**
  * Group series into two types
- *  1. on category axis, like line, bar
+ *  1. on categories axis, like line, bar
  *  2. others, like scatter, pie
  * @param {module:echarts/model/Global} ecModel
  * @return {Object}
@@ -77293,7 +77293,7 @@ proto$5.setOutputRanges = function (areas, ecModel) {
         // area.coordRange is the first of area.coordRanges
         if (!area.coordRange) {
             area.coordRange = coordRange;
-            // In 'category' axis, coord to pixel is not reversible, so we can not
+            // In 'categories' axis, coord to pixel is not reversible, so we can not
             // rebuild range by coordRange accrately, which may bring trouble when
             // brushing only one item. So we use __rangeOffset to rebuilding range
             // by coordRange. And this it only used in brush component so it is no
@@ -78128,7 +78128,7 @@ AxisProxy.prototype = {
 
             if (rangePropMode[idx] === 'percent') {
                 boundPercent == null && (boundPercent = percentExtent[idx]);
-                // Use scale.parse to math round for category or time axis.
+                // Use scale.parse to math round for categories or time axis.
                 boundValue = scale.parse(linearMap(
                     boundPercent, percentExtent, dataExtent
                 ));
@@ -78349,7 +78349,7 @@ function calculateDataExtent(axisProxy, axisDim, seriesModels) {
     // when zooming. But it is difficult to know what is "consistent", considering
     // axes have different type or even different meanings (For example, two
     // time axes are used to compare data of the same date in different years).
-    // So basically dataZoom just obtains extent by series.data (in category axis
+    // So basically dataZoom just obtains extent by series.data (in categories axis
     // extent can be obtained from axis.data).
     // Nevertheless, user can set min/max/scale on axes to make extent of axes
     // consistent.
@@ -78362,7 +78362,7 @@ function fixExtentByAxis(axisProxy, dataExtent) {
     var axisModel = axisProxy.getAxisModel();
     var min = axisModel.getMin(true);
 
-    // For category axis, if min/max/scale are not set, extent is determined
+    // For categories axis, if min/max/scale are not set, extent is determined
     // by axis.data by default.
     var isCategoryAxis = axisModel.get('type') === 'category';
     var axisDataLen = isCategoryAxis && axisModel.getCategories().length;
@@ -78481,8 +78481,8 @@ var DataZoomModel = extendComponentModel({
         zlevel: 0,
         z: 4,                   // Higher than normal component (z: 2).
         orient: null,           // Default auto by axisIndex. Possible value: 'horizontal', 'vertical'.
-        xAxisIndex: null,       // Default the first horizontal category axis.
-        yAxisIndex: null,       // Default the first vertical category axis.
+        xAxisIndex: null,       // Default the first horizontal categories axis.
+        yAxisIndex: null,       // Default the first vertical categories axis.
 
         filterMode: 'filter',   // Possible values: 'filter' or 'empty' or 'weakFilter'.
                                 // 'filter': data items which are out of window will be removed. This option is
@@ -78711,7 +78711,7 @@ var DataZoomModel = extendComponentModel({
         }
 
         if (autoAxisIndex) {
-            // Find the first category axis as default. (consider polar)
+            // Find the first categories axis as default. (consider polar)
             eachAxisDim(function (dimNames) {
                 if (!autoAxisIndex) {
                     return;
@@ -79793,7 +79793,7 @@ extendComponentModel({
 
             // type 为 line 的时候有效，指定 tooltip line 所在的轴，可选
             // 可选 'x' | 'y' | 'angle' | 'radius' | 'auto'
-            // 默认 'auto'，会选择类型为 category 的轴，对于双数值轴，笛卡尔坐标系会默认选择 x 轴
+            // 默认 'auto'，会选择类型为 categories 的轴，对于双数值轴，笛卡尔坐标系会默认选择 x 轴
             // 极坐标系会默认选择 angle 轴
             axis: 'auto',
 
@@ -82854,7 +82854,7 @@ var TimelineModel = ComponentModel.extend({
         z: 4,                       // 二级层叠
         show: true,
 
-        axisType: 'time',  // 模式是时间类型，支持 value, category
+        axisType: 'time',  // 模式是时间类型，支持 value, categories
 
         realtime: true,
 
@@ -83191,7 +83191,7 @@ var TimelineAxis = function (dim, scale, coordExtent, axisType) {
 
     /**
      * Axis type
-     *  - 'category'
+     *  - 'categories'
      *  - 'value'
      *  - 'time'
      *  - 'log'
@@ -88902,7 +88902,7 @@ var VisualMapModel = extendComponentModel({
     /**
      * @example
      * this.formatValueText(someVal); // format single numeric value to text.
-     * this.formatValueText(someVal, true); // format single category value to text.
+     * this.formatValueText(someVal, true); // format single categories value to text.
      * this.formatValueText([min, max]); // format numeric min-max to text.
      * this.formatValueText([this.dataBound[0], max]); // using data lower bound.
      * this.formatValueText([min, this.dataBound[1]]); // using data upper bound.
@@ -88956,7 +88956,7 @@ var VisualMapModel = extendComponentModel({
                 return textValue[0] + ' - ' + textValue[1];
             }
         }
-        else { // Format single value (includes category case).
+        else { // Format single value (includes categories case).
             return textValue;
         }
 
@@ -90687,7 +90687,7 @@ var PiecewiseModel = VisualMapModel.extend({
                                     // color, colorSaturation, colorAlpha, opacity,
                                     // symbol, symbolSize}, which customize the range or visual
                                     // coding of the certain piece. Besides, see "Order Rule".
-        categories: null,           // category names, like: ['some1', 'some2', 'some3'].
+        categories: null,           // categories names, like: ['some1', 'some2', 'some3'].
                                     // Attr min/max are ignored when categories set. See "Order Rule"
         splitNumber: 5,             // If set to 5, auto split five pieces equally.
                                     // If set to 0 and component type not set, component type will be
@@ -90933,7 +90933,7 @@ var PiecewiseModel = VisualMapModel.extend({
     },
 
     getVisualMeta: function (getColorVisual) {
-        // Do not support category. (category axis is ordinal, numerical)
+        // Do not support categories. (categories axis is ordinal, numerical)
         if (this.isCategory()) {
             return;
         }

@@ -663,7 +663,7 @@
   $.app.nav = {
     container: $('.navigation-main'),
     initialized: false,
-    navItem: $('.navigation-main').find('li').not('.navigation-category'),
+    navItem: $('.navigation-main').find('li').not('.navigation-categories'),
 
     config: {
       speed: 300,

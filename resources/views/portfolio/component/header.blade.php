@@ -4,7 +4,7 @@
         <div class="intro-text">
             <p class="intro-lead-in">Mokaddes Hosain</p>
             <h1 class="intro-heading text-uppercase"><strong>Laravel Developer</strong></h1>
-            <p>portfolio</p>
+            <a href="{{ asset('assets/cv/mokaddes_hosain.pdf')}}" download="mokaddes">Download CV</a>
             {{-- <p class="text-muted">1.0.0-beta</p> --}}
         </div>
         <div class="py-3">

@@ -2,9 +2,7 @@
     File Name: fullcalendar.js
     Description: Fullcalendar
     --------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
+
 ==========================================================================================*/
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     danger: "Personal",
     warning: "Work"
   };
-  var categoryBullets = $(".cal-category-bullets").html(),
+  var categoryBullets = $(".cal-categories-bullets").html(),
     evtColor = "",
     eventColor = "";
 
@@ -44,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
           $(".modal-calendar .remove-event").addClass("d-none");
           $(".modal-calendar .cal-add-event").removeClass("d-none")
           $(".modal-calendar .cancel-event").removeClass("d-none")
-          $(".modal-calendar .add-category .chip").remove();
+          $(".modal-calendar .add-categories .chip").remove();
           $("#cal-start-date").val(todaysDate);
           $("#cal-end-date").val(todaysDate);
           $(".modal-calendar #cal-start-date").attr("disabled", false);
@@ -133,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".modal-calendar .remove-event").addClass("d-none");
     $(".modal-calendar .cal-add-event").removeClass("d-none");
     $(".modal-calendar .cancel-event").removeClass("d-none");
-    $(".modal-calendar .add-category .chip").remove();
+    $(".modal-calendar .add-categories .chip").remove();
     $(".modal-calendar .modal-footer .btn").attr("disabled", true);
     evtColor = colors.primary;
     eventColor = "primary";
@@ -146,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
     eventTag = categoryText[selectedColor];
     eventColor = selectedColor;
 
-    // changes event color after selecting category
+    // changes event color after selecting categories
     $(".cal-add-event").on("click", function () {
       calendar.addEvent({
         color: evtColor,
@@ -158,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".calendar-dropdown .dropdown-menu").find(".selected").removeClass("selected");
     $(this).addClass("selected");
 
-    // add chip according to category
+    // add chip according to categories
     $(".modal-calendar .chip-wrapper .chip").remove();
     $(".modal-calendar .chip-wrapper").append($("<div class='chip chip-" + selectedColor + "'>" +
       "<div class='chip-body'>" +

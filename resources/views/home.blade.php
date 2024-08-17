@@ -1,4 +1,6 @@
 @extends('admin.layouts.master')
+@section('dashboard', 'active')
+
 
 @section('content')
     <!-- BEGIN: Content-->

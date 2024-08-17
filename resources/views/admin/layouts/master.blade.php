@@ -20,6 +20,7 @@
 
 
 @include('admin.layouts.scripts')
+@stack('scripts')
 
 </body>
 <!-- END: Body-->

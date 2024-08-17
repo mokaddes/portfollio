@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\ContactMailNotification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -11,10 +14,6 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     /**
      * Show the application dashboard.
@@ -24,5 +23,33 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function ai()
+    {
+        return view('ai');
+    }
+
+    public function contact(Request $request)
+    {
+        $valid = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'message' => 'required'
+        ]);
+
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message,
+            'ip_address' => $request->ip()
+        ];
+        $mail = 'mr.mokaddes@gmail.com';
+        Notification::route('mail', $mail)->notify(new ContactMailNotification($data));
+        $session = [
+            'message' => 'Thank you for your message. We will get back to you soon.',
+            'alert-type' => 'success'
+        ];
+
+        return redirect()->back()->with($session);
     }
 }
