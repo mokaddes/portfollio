@@ -1,6 +1,6 @@
 
 <section id="personal" class="bg-light">
-    <div class="container">
+    <div class="container mb-3">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-header">
@@ -66,4 +66,6 @@
             </div>
         </div>
     </div>
+
+    @include('portfolio.component.sections.contact')
 </section>

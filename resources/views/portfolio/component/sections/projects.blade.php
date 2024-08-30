@@ -13,17 +13,16 @@
             <div class="col-sm-6 col-md-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
-                        <a href="https://www.tclibrary.com" title="TCLI Library" target="_blank" rel="nofollow">
-                            <h4 class="card-title heading mt-3">TCLI Library</h4>
+                        <a href="https://mhzone.mokaddes.com/" title="MH ZONE" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">MH ZONE</h4>
                         </a>
-                        <a href="https://www.tclibrary.com" title="TCLI Library" target="_blank"
+                        <a href="https://mhzone.mokaddes.com/" title="MH ZONE" target="_blank"
                            rel="nofollow">
                             <img class="card-img-top d-block mx-auto img-logo"
-                                 src="{{ asset('assets/images/tcli.png') }}" alt="TCLI Library Logo">
+                                 src="{{ asset('assets/images/mhzone.png') }}" alt="MH ZONE Logo">
                         </a>
                         <p class="card-text description mt-3">
-                            An innovative online library management platform with integrated forums, clubs, and REST API
-                            support for seamless app integration
+                            A fully functional multi-vendor eCommerce platform using Laravel and MySQL. The platform allows users to seamlessly switch between two modes: Seller and Buyer.
                         </p>
                     </div>
                 </div>
@@ -49,6 +48,23 @@
             <div class="col-sm-6 col-md-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
+                        <a href="https://franchisesavailablenow.com/" title="Franchises" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">Franchises Available Now</h4>
+                        </a>
+                        <a href="https://franchisesavailablenow.com/" title="Franchises" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/franchises.png') }}" alt="Franchises Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A platform that helps users discover and evaluate franchise opportunities by interest, budget, and location, providing details on costs & requirements for informed decision-making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{--<div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
                         <a href="https://www.zentune.online" title="Zentune" target="_blank" rel="nofollow">
                             <h4 class="card-title heading mt-3">Zentune</h4>
                         </a>
@@ -63,7 +79,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div>--}}
             <div class="col-sm-6 col-md-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
@@ -114,6 +130,24 @@
                         <p class="card-text description mt-3">
                             A car booking platform for users to find and book exciting activities, guided tours, and
                             sightseeing adventures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
+                        <a href="https://www.tclibrary.com" title="TCLI Library" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">TCLI Library</h4>
+                        </a>
+                        <a href="https://www.tclibrary.com" title="TCLI Library" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/tcli.png') }}" alt="TCLI Library Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            An innovative online library management platform with integrated forums, clubs, and REST API
+                            support for seamless app integration
                         </p>
                     </div>
                 </div>

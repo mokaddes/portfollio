@@ -49,8 +49,10 @@ class ProjectController extends Controller
         $imageName = time().'.'.$request->image->extension();
         $request->image->move(public_path('images'), $imageName);
         $data = $request->except('_token');
-        $data['image'] = $imageName;
+        $data['image'] = 'images/'.$imageName;
         $this->projectRepo->create($data);
+
+        return redirect()->back();
     }
 
     /**

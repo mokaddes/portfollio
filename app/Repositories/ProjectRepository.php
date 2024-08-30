@@ -16,6 +16,7 @@ class ProjectRepository
 
     public function create($data)
     {
+        $data['slug'] = Str::slug($data['name']);
         return Project::create($data);
     }
 

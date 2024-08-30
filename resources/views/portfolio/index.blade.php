@@ -22,45 +22,6 @@
     @include('portfolio.component.sections.mini')
     @include('portfolio.component.sections.personal')
 
-    <!-- Contact Us Button -->
-    <button id="contact-us-btn" class="btn btn-primary " data-toggle="modal" data-target="#contactModal">
-        <i class="fa fa-envelope fa-2x" ></i>
-    </button>
-
-    <!-- Contact Us Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Hair Me!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="{{ route('contact') }}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" required class="form-control" id="email" name="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea required class="form-control" id="message" name="message" rows="4" placeholder="Your message"></textarea>
-                        </div>
-                        <div class="text-right">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 @endsection
 
 @push('js')
@@ -84,5 +45,19 @@
             }
         @endif
     </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/66cf399dea492f34bc0b0892/1i6cni4g1';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 @endpush
