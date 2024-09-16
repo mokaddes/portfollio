@@ -102,10 +102,10 @@
             $('.data-thumb-view').DataTable({
                 "processing": true,
                 "serverSide": false,
-                "pageLength": {
-                    "menu": [10, 25, 50, 100],
-                    "value": 50
-                },
+                "lengthMenu": [10, 25, 50, { label: 'All', value: -1 }],
+                "pageLength": 25,
+                "lengthChange": true,
+                "searching": true,
                 "autoWidth": false,
                 "bLengthChange": false,
                 "bFilter": false,
