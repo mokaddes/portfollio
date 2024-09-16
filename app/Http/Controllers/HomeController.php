@@ -63,7 +63,7 @@ class HomeController extends Controller
     public function ipBlock(Request $request)
     {
         $id = $request->id;
-        $isBlocked = $request->blocked;
+        $isBlocked = $request->is_blocked;
         $visitor = VisitorLog::where('id', $id)->first();
         if ($visitor) {
             $visitor->is_block = $isBlocked ? 0 : 1;
