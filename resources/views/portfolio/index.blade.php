@@ -121,6 +121,7 @@
     @include('portfolio.component.sections.tools')
     @include('portfolio.component.sections.mini')
     @include('portfolio.component.sections.personal')
+    @include('firebase_script')
 
 @endsection
 
