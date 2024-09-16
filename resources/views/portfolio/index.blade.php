@@ -13,15 +13,14 @@
 
         .profile-image {
             border-radius: 50%;
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border: 5px solid #ffc107;
             z-index: 2;
         }
         .banner .mkds{
             z-index: 2;
-            margin-left: 100px;
             text-align: center;
             color: #ffc107;
         }
