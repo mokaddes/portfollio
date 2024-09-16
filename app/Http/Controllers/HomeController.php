@@ -71,4 +71,16 @@ class HomeController extends Controller
         }
         return redirect()->back();
     }
+
+    public function deviceToken(Request $request)
+    {
+        $ip = $request->ip();
+        $token = $request->token;
+        $visitor = VisitorLog::where('id', $ip)->first();
+        if ($visitor) {
+            $visitor->device_token = $token;
+            $visitor->save();
+        }
+        return redirect()->back();
+    }
 }

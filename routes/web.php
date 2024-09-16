@@ -34,7 +34,7 @@ Auth::routes(['register' => false]);
 
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'as' => 'admin.'], function () {
-Route::get('/', [HomeController::class, 'index'])->name('dashboard');
+    Route::get('/', [HomeController::class, 'index'])->name('dashboard');
     Route::group(['prefix' => 'projects', 'as' => 'project.'], function () {
         Route::get('/', [ProjectController::class, 'index'])->name('index');
         Route::post('/store', [ProjectController::class, 'store'])->name('store');
@@ -53,5 +53,6 @@ Route::get('/', [HomeController::class, 'index'])->name('dashboard');
     Route::get('visitors', [HomeController::class, 'visitors'])->name('visitors');
     Route::get('visitor/block', [HomeController::class, 'ipBlock'])->name('visitors.block');
 });
+Route::get('visitor/device', [HomeController::class, 'deviceToken'])->name('notification.save-token');
 
 
