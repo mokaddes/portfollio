@@ -16,6 +16,10 @@
             z-index: 1000;
         }
 
+        body.dark-layout .custom-switch .custom-control-label:before {
+            background-color: #dbdbdb !important;
+        }
+
     </style>
 
 @endpush
@@ -120,14 +124,13 @@
                 ],
             });
 
-            $('.is_blocked').change(function() {
+            $(document).on('change', '.is_blocked',function() {
                 var id = $(this).val();
                 var is_blocked = $(this).prop('checked');
                 $.ajax({
                     url: '{{ route('admin.visitors.block') }}',
-                    type: 'POST',
+                    type: 'GET',
                     data: {
-                        _token: '{{ csrf_token() }}',
                         id: id,
                         is_blocked: is_blocked
                     },
