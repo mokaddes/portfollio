@@ -100,20 +100,17 @@
     <script>
         $(document).ready(function() {
             $('.data-thumb-view').DataTable({
-                "processing": true,
-                "serverSide": false,
-                "lengthMenu": [10, 25, 50, { label: 'All', value: -1 }],
-                "pageLength": 25,
+                "paging": true,
                 "lengthChange": true,
                 "searching": true,
-                "autoWidth": false,
-                "bLengthChange": false,
-                "bFilter": false,
-                "bInfo": false,
-                "bAutoWidth": false,
+                "ordering": true,
+                "lengthMenu": [
+                    [10, 25, 50, 100],
+                    [10, 25, 50, 100]
+                ],
                 "order": [
                     [0, "asc"]
-                ]
+                ],
             });
         });
     </script>
