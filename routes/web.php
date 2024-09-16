@@ -51,6 +51,7 @@ Route::get('/', [HomeController::class, 'index'])->name('dashboard');
     });
 
     Route::get('visitors', [HomeController::class, 'visitors'])->name('visitors');
+    Route::get('visitor/block', [HomeController::class, 'ipBlock'])->name('visitors.block');
 });
 
 

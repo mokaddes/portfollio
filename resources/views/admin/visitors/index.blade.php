@@ -57,6 +57,7 @@
                                 <th>Location</th>
                                 <th>Organization</th>
                                 <th>Total</th>
+                                <th>Is Blocked</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -70,6 +71,12 @@
                                     <td>{{ $visitor->location }}</td>
                                     <td>{{ $visitor->organization }}</td>
                                     <td>{{ $visitor->visit_count }}</td>
+                                    <td>
+                                        <div class="custom-control custom-switch custom-switch-success">
+                                            <input type="checkbox" class="custom-control-input is_blocked" id="customSwitch{{ $visitor->id }}" value="{{ $visitor->id }}" {{ $visitor->is_blocked ? 'checked' : '' }}>
+                                            <label class="custom-control-label" for="customSwitch{{ $visitor->id }}"></label>
+                                        </div>
+                                    </td>
                                 </tr>
 
                             @endforeach
@@ -111,6 +118,27 @@
                 "order": [
                     [0, "asc"]
                 ],
+            });
+
+            $('.is_blocked').change(function() {
+                var id = $(this).val();
+                var is_blocked = $(this).prop('checked');
+                $.ajax({
+                    url: '{{ route('admin.visitors.block') }}',
+                    type: 'POST',
+                    data: {
+                        _token: '{{ csrf_token() }}',
+                        id: id,
+                        is_blocked: is_blocked
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            toastr.success(response.message);
+                        } else {
+                            toastr.error(response.message);
+                        }
+                    }
+                });
             });
         });
     </script>

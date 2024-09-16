@@ -22,6 +22,10 @@ class HomeController extends Controller
 
     public function contact(Request $request)
     {
+        $blockIps = VisitorLog::where('is_blocked', '1')->pluck('ip_address')->toArray();
+        if (in_array($request->ip(), $blockIps)) {
+            abort(403, 'You are blocked from sending message.');
+        }
         $valid = Validator::make($request->all(), [
             'email' => 'required|email',
             'message' => 'required'
@@ -54,5 +58,17 @@ class HomeController extends Controller
     {
         $visitors = VisitorLog::latest('id')->get();
         return view('admin.visitors.index', compact('visitors'));
+    }
+
+    public function ipBlock(Request $request)
+    {
+        $id = $request->id;
+        $isBlocked = $request->blocked;
+        $visitor = VisitorLog::where('id', $id)->first();
+        if ($visitor) {
+            $visitor->blocked = $isBlocked ? 0 : 1;
+            $visitor->save();
+        }
+        return redirect()->back();
     }
 }
