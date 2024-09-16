@@ -66,7 +66,7 @@ class HomeController extends Controller
         $isBlocked = $request->blocked;
         $visitor = VisitorLog::where('id', $id)->first();
         if ($visitor) {
-            $visitor->blocked = $isBlocked ? 0 : 1;
+            $visitor->is_block = $isBlocked ? 0 : 1;
             $visitor->save();
         }
         return redirect()->back();

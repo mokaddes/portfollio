@@ -20,6 +20,7 @@ return new class extends Migration {
             $table->string('organization')->nullable();
             $table->string('timezone')->nullable();
             $table->integer('visit_count')->default(1);
+            $table->tinyInteger('is_block')->default(0);
             $table->timestamps();
         });
     }
