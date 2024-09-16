@@ -60,9 +60,9 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($visitors as $visitor)
+                            @foreach($visitors as $index => $visitor)
                                 <tr>
-                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $index + 1 }}</td>
                                     <td>{{ $visitor->ip_address }}</td>
                                     <td>{{ $visitor->city }}</td>
                                     <td>{{ $visitor->region }}</td>
