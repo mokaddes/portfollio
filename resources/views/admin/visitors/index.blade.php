@@ -97,5 +97,21 @@
     <script src="{{ asset('app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js') }}"></script>
     <!-- END: Page Vendor JS-->
 
-    <script src="{{ asset('app-assets/js/scripts/ui/data-list-view.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.data-thumb-view').DataTable({
+                "processing": true,
+                "serverSide": false,
+                "pageLength": 20,
+                "autoWidth": false,
+                "bLengthChange": false,
+                "bFilter": false,
+                "bInfo": false,
+                "bAutoWidth": false,
+                "order": [
+                    [0, "desc"]
+                ]
+            });
+        });
+    </script>
 @endpush
