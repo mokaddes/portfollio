@@ -80,7 +80,7 @@
                                         <div class="custom-control custom-switch custom-switch-success">
                                             <input type="checkbox" class="custom-control-input is_blocked"
                                                    id="customSwitch{{ $visitor->id }}"
-                                                   value="{{ $visitor->id }}" {{ $visitor->is_blocked ? 'checked' : '' }}>
+                                                   value="{{ $visitor->id }}" {{ $visitor->is_block ? 'checked' : '' }}>
                                             <label class="custom-control-label"
                                                    for="customSwitch{{ $visitor->id }}"></label>
                                         </div>
