@@ -45,30 +45,11 @@
             <div class="content-body">
                 <!-- Data list view starts -->
                 <section id="data-thumb-view" class="data-thumb-view-header">
-                    <div class="action-btns d-none">
-                        <div class="btn-dropdown mr-1 mb-1">
-                            <div class="btn-group dropdown actions-dropodown">
-                                <button type="button"
-                                        class="btn btn-white px-1 py-1 dropdown-toggle waves-effect waves-light"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Actions
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another
-                                        Action</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- dataTable starts -->
                     <div class="table-responsive">
                         <table class="table data-thumb-view">
                             <thead>
                             <tr>
-                                <th></th>
+                                <th>SL</th>
                                 <th>IP</th>
                                 <th>City</th>
                                 <th>Region</th>
@@ -81,7 +62,7 @@
                             <tbody>
                             @foreach($visitors as $visitor)
                                 <tr>
-                                    <td></td>
+                                    <td>{{ $loop->iteration }}</td>
                                     <td>{{ $visitor->ip_address }}</td>
                                     <td>{{ $visitor->city }}</td>
                                     <td>{{ $visitor->region }}</td>
