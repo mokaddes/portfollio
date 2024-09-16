@@ -121,12 +121,13 @@
     @include('portfolio.component.sections.tools')
     @include('portfolio.component.sections.mini')
     @include('portfolio.component.sections.personal')
-    @include('firebase_script')
+
 
 @endsection
 
 @push('js')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    @include('firebase_script')
     <script>
         @if(Session::has('message'))
             var type = "{{ Session::get('alert-type', 'info') }}";

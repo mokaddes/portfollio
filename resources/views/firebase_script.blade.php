@@ -29,14 +29,14 @@
                 // console.log(get_token);
                 // if (get_token == null)
                 // {
-                $.ajaxSetup({
+              /*  $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     }
-                });
+                });*/
                 $.ajax({
                     url: '{{ route('notification.save-token') }}',
-                    type: 'POST',
+                    type: 'GET',
                     data: {
                         token: token
                     },
