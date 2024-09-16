@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/plugins/file-uploaders/dropzone.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/pages/data-list-view.css') }}">
     <!-- END: Page CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
     <style>
 
         #contact-us-btn {
@@ -77,8 +78,11 @@
                                     <td>{{ $visitor->visit_count }}</td>
                                     <td>
                                         <div class="custom-control custom-switch custom-switch-success">
-                                            <input type="checkbox" class="custom-control-input is_blocked" id="customSwitch{{ $visitor->id }}" value="{{ $visitor->id }}" {{ $visitor->is_blocked ? 'checked' : '' }}>
-                                            <label class="custom-control-label" for="customSwitch{{ $visitor->id }}"></label>
+                                            <input type="checkbox" class="custom-control-input is_blocked"
+                                                   id="customSwitch{{ $visitor->id }}"
+                                                   value="{{ $visitor->id }}" {{ $visitor->is_blocked ? 'checked' : '' }}>
+                                            <label class="custom-control-label"
+                                                   for="customSwitch{{ $visitor->id }}"></label>
                                         </div>
                                     </td>
                                 </tr>
@@ -107,9 +111,9 @@
     <script src="{{ asset('app-assets/vendors/js/tables/datatable/dataTables.select.min.js') }}"></script>
     <script src="{{ asset('app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js') }}"></script>
     <!-- END: Page Vendor JS-->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.data-thumb-view').DataTable({
                 "paging": true,
                 "lengthChange": true,
@@ -124,7 +128,7 @@
                 ],
             });
 
-            $(document).on('change', '.is_blocked',function() {
+            $(document).on('change', '.is_blocked', function () {
                 var id = $(this).val();
                 var is_blocked = $(this).prop('checked');
                 $.ajax({
@@ -134,7 +138,7 @@
                         id: id,
                         is_blocked: is_blocked
                     },
-                    success: function(response) {
+                    success: function (response) {
                         if (response.success) {
                             toastr.success(response.message);
                         } else {
