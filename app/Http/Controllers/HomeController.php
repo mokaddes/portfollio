@@ -52,7 +52,7 @@ class HomeController extends Controller
 
     public function visitors()
     {
-        $visitors = VisitorLog::all();
+        $visitors = VisitorLog::latest('id')->get();
         return view('admin.visitors.index', compact('visitors'));
     }
 }
