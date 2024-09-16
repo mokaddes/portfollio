@@ -109,7 +109,7 @@
                 "bInfo": false,
                 "bAutoWidth": false,
                 "order": [
-                    [0, "desc"]
+                    [0, "asc"]
                 ]
             });
         });
