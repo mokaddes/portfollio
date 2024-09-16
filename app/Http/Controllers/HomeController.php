@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\VisitorLog;
 use App\Notifications\ContactMailNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Notification;
@@ -58,5 +59,11 @@ class HomeController extends Controller
         ];
 
         return redirect()->back()->with($session);
+    }
+
+    public function visitors()
+    {
+        $visitors = VisitorLog::all();
+        return view('admin.visitors.index', compact('visitors'));
     }
 }

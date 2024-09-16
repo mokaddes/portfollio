@@ -49,6 +49,8 @@ Route::get('/', [HomeController::class, 'index'])->name('dashboard');
         Route::post('/update/{category}', [CategoryController::class, 'update'])->name('update');
         Route::get('/delete/{category}', [CategoryController::class, 'destroy'])->name('delete');
     });
+
+    Route::get('visitors', [HomeController::class, 'visitors'])->name('visitors');
 });
 
 

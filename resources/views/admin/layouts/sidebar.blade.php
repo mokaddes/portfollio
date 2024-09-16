@@ -35,9 +35,14 @@
             </li>
             <li class=" nav-item @yield('project')">
                 <a href="{{ route('admin.project.index') }}">
-                <a href="{{ route('admin.project.index') }}">
                     <i class="feather icon-package"></i>
                     <span class="menu-title" data-i18n="Project">Projects</span>
+                </a>
+            </li>
+            <li class=" nav-item @yield('visitors')">
+                <a href="{{ route('admin.visitors') }}">
+                    <i class="feather icon-user"></i>
+                    <span class="menu-title" data-i18n="Project">Visitors</span>
                 </a>
             </li>
 
