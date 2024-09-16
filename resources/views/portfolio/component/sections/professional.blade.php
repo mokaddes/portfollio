@@ -113,13 +113,33 @@
                     <p class="text-muted">I use relational databases MySQL and MariaDB to store data</p>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            {{--<div class="col-12 col-sm-12 col-md-6 col-lg-3">
                 <div class="card-body">
                     <div class="fa-stack fa-1x mb-3">
                         <img src="{{ asset('assets/icons/apache.svg') }}" alt="Apache Server">
                     </div>
                     <h3 class="service-heading">Apache Server</h3>
                     <p class="text-muted">I use Apache server to serve sites</p>
+                </div>
+            </div>--}}
+            {{-- Vue js --}}
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card-body">
+                    <div class="fa-stack fa-1x mb-3">
+                        <img src="{{ asset('assets/icons/vuejs.svg') }}" alt="Vue.js">
+                    </div>
+                    <h3 class="service-heading">Vue.js</h3>
+                    <p class="text-muted mb-0">I use Vue.js to create interactive user interfaces</p>
+                </div>
+            </div>
+            {{-- Sonar Qube --}}
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card-body">
+                    <div class="fa-stack fa-1x mb-3">
+                        <img src="{{ asset('assets/icons/sonarqube-1.svg') }}" alt="SonarQube" width="50px">
+                    </div>
+                    <h3 class="service-heading">SonarQube</h3>
+                    <p class="text-muted mb-0">I use SonarQube to analyze the quality of code</p>
                 </div>
             </div>
         </div>

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Mokaddes Hosain - Software Developer | portfolio {{date('Y')}}</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="{{ asset('images/mkds.jpg') }}" type="image/x-icon">
+    <meta name="keywords" content="Mokaddes Hosain, Software Developer, Laravel Developer, PHP Developer, Full Stack Developer, Mokaddes, Hosain">
     <meta name="description" content="Mokaddes Hosain - Software Developer | portfolio " {{date('Y')}}>
 
     <meta name="author" content="Mokaddes Hosain">
