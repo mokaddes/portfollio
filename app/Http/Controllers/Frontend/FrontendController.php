@@ -16,7 +16,7 @@ class FrontendController extends Controller
         $ip = request()->ip();
         try {
             if ($ip !== '103.176.2.79' && $ip !== '127.0.0.1') {
-                $visitData = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+                $visitData = json_decode(file_get_contents("https://ipinfo.io/{$ip}/json"));
                 $visitor = VisitorLog::where('ip_address', $ip)->first();
                 if (!$visitor) {
                     $visitor = new VisitorLog();
@@ -32,7 +32,6 @@ class FrontendController extends Controller
                 $visitor->save();
             }
         } catch (\Exception $e) {
-            Log::alert($e->getMessage());
             Log::alert($e->getMessage());
         }
         return view('portfolio.index');
