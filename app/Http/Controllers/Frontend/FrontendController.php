@@ -33,6 +33,7 @@ class FrontendController extends Controller
             }
         } catch (\Exception $e) {
             Log::alert($e->getMessage());
+            Log::alert($e->getMessage());
         }
         return view('portfolio.index');
 
