@@ -5,5 +5,5 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext"
       rel="stylesheet">
 
-<link href="{{ asset('assets/css/agency.css') }}" rel="stylesheet">
-<link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/agency.css?v=1') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/main.css?v=1') }}" rel="stylesheet">
