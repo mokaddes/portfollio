@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://mhzone.mokaddes.com/" title="MH ZONE" target="_blank" rel="nofollow">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://www.brp.online" title="BRP" target="_blank" rel="nofollow">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://franchisesavailablenow.com/" title="Franchises" target="_blank" rel="nofollow">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            {{--<div class="col-sm-6 col-md-3 mb-4">
+            {{--<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://www.zentune.online" title="Zentune" target="_blank" rel="nofollow">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>--}}
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://everisamting.com/" title="Everisamting" target="_blank" rel="nofollow">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://serviceprovider.ae/" title="Service Provider" target="_blank" rel="nofollow">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://enjoycitytours.com/" title="Enjoy City Tour" target="_blank" rel="nofollow">
@@ -134,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://www.tclibrary.com" title="TCLI Library" target="_blank" rel="nofollow">
@@ -152,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://enjoycitytours.com/" title="Dhereye Delivery" target="_blank" rel="nofollow">

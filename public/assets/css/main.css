@@ -77,3 +77,200 @@ img.img-desaturated:hover {
 #projects .col-12 {
     padding: 15px;
 }
+#contact-us-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #ffc107;
+    z-index: 2;
+}
+.banner .mkds{
+    z-index: 2;
+    text-align: center;
+    color: #ffc107;
+}
+
+.banner .info {
+    margin-left: 20px;
+    z-index: 2;
+
+}
+
+.banner .name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.banner .profession {
+    font-size: 1.5rem;
+}
+
+.banner .contact-info {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #0dcaf0 !important;
+}
+.banner .contact-info a{
+    color: #0dcaf0 !important;
+    text-decoration: none;
+}
+
+.banner .contact-info p {
+    margin: 5px 0;
+}
+
+.banner .contact-info i {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.banner .social-icons {
+    margin-top: 10px;
+}
+
+.banner .social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.banner .coding-environment h3 {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner .coding-environment p {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay-gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgb(96 96 96 / 53%) 20%, rgb(0 0 0) 100%);
+    z-index: 1;
+}
+.banner .icon img{
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+.download-btn{
+    padding: 0px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 22px 14px rgba(0, 0, 0, 0.9);
+    background: #fdfdfd00 !important;
+    color: #fff;
+
+}
+
+.download-btn:hover {
+    background-color: #dae0e5 !important;
+    color: #000;
+}
+
+.whatsapp_icon {
+    position: fixed;
+    z-index: 99;
+    bottom: 35px;
+    right: 22px;
+    height: 65px;
+    width: 65px;
+    background: #25d366;
+    box-shadow: 1px 6px 24px 0 rgba(7, 94, 84, .24);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 13px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.whatsapp_icon:hover {
+    background: #029b3b;
+}
+
+.whatsapp_icon svg {
+    display: block;
+    width: 39px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-container {
+    background-color: #f8f9fa;
+}
+
+.contact-container .section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-container .card {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.contact-container .card-body {
+    padding: 2rem;
+}
+
+.contact-container .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.contact-container input.form-control-lg,
+.contact-container textarea.form-control {
+    border: 1px solid #ced4da;
+    padding: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-container input.form-control-lg:focus,
+.contact-container textarea.form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,.25);
+}
+
+.contact-container .card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-container input.form-control-lg {
+    border-radius: 50px;
+}
+
+.contact-container textarea.form-control {
+    border-radius: 10px;
+}
+
+.contact-container .text-muted {
+    color: #6c757d !important;
+}
+
