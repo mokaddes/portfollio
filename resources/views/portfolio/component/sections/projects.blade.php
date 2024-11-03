@@ -30,6 +30,23 @@
             <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
+                        <a href="https://chat.mokaddes.com/" title="Real Time Chat App" target="_blank" rel="nofollow">
+                            <h4 class="card-title heading mt-3">Real Time Chat App</h4>
+                        </a>
+                        <a href="https://chat.mokaddes.com/" title="Real Time Chat App" target="_blank"
+                           rel="nofollow">
+                            <img class="card-img-top d-block mx-auto img-logo"
+                                 src="{{ asset('assets/images/chat.png') }}" alt="Real Time Chat App Logo">
+                        </a>
+                        <p class="card-text description mt-3">
+                            A real-time chat application that allows users to create chat rooms, send messages. The app is built using Laravel, Vue.js, and Pusher.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 border-0 shadow card-hover">
+                    <div class="card-body text-center">
                         <a href="https://www.brp.online" title="BRP" target="_blank" rel="nofollow">
                             <h4 class="card-title heading mt-3">BRP</h4>
                         </a>
@@ -152,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            {{--<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100 border-0 shadow card-hover">
                     <div class="card-body text-center">
                         <a href="https://enjoycitytours.com/" title="Dhereye Delivery" target="_blank" rel="nofollow">
@@ -169,7 +186,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div>--}}
         </div>
     </div>
 </section>
